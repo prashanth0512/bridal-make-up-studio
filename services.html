@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | Blush &amp; Bloom Bridal Studio</title>
+  <meta name="description" content="Bridal makeup, airbrush, hairstyling, draping and skin prep. Explore Blush &amp; Bloom services, add-ons and how booking works." />
+
+  <!-- Apply saved theme / direction before paint (prevents flash) -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('bb-theme');
+        var d = localStorage.getItem('bb-dir');
+        if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', t);
+        if (d) document.documentElement.setAttribute('dir', d);
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- Favicon: floral-silhouette bride (inline SVG, no extra file) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%222 -1 116 118%22%3E%3Cstyle%3E.lm-veil%7Bfill:%23C9A35F%7D.lm-hair,.lm-part,.lm-hole%7Bfill:%23A0455C%7D.lm-face,.lm-petals%7Bfill:%23fff%7D.lm-jewel,.lm-dot,.lm-gem%7Bfill:%23C9A35F%7D.lm-neck,.lm-chain%7Bfill:none;stroke:%23C9A35F;stroke-width:2.4;stroke-linecap:round%7D%3C/style%3E%3Cpath class=%22lm-veil%22 d=%22M60 10 C 28 10, 14 40, 14 72 C 14 94, 10 106, 4 116 L 116 116 C 110 106, 106 94, 106 72 C 106 40, 92 10, 60 10 Z%22/%3E%3Cpath class=%22lm-hair%22 d=%22M60 22 C 38 22, 30 42, 30 64 C 30 82, 28 96, 24 116 L 96 116 C 92 96, 90 82, 90 64 C 90 42, 82 22, 60 22 Z%22/%3E%3Cpath class=%22lm-face%22 d=%22M60 34 C 50 36, 44 44, 44 56 C 44 70, 51 80, 60 80 C 69 80, 76 70, 76 56 C 76 44, 70 36, 60 34 Z M53 79 L53 88 C 46 90, 40 98, 38 116 L 82 116 C 80 98, 74 90, 67 88 L 67 79 Z%22/%3E%3Cpath class=%22lm-part%22 d=%22M60 34 C 56 40, 50 44, 44 48 L 44 44 C 48 40, 54 35, 60 34 Z M60 34 C 64 40, 70 44, 76 48 L 76 44 C 72 40, 66 35, 60 34 Z%22/%3E%3Cg class=%22lm-jewel%22%3E%3Cpath class=%22lm-neck%22 d=%22M53 89 C 56 95, 64 95, 67 89%22/%3E%3Ccircle cx=%2260%22 cy=%2297%22 r=%222.2%22/%3E%3Cpath class=%22lm-chain%22 d=%22M60 35 L60 41%22/%3E%3Cpath d=%22M60 41 L62.6 44 L60 47 L57.4 44 Z%22/%3E%3C/g%3E%3Cg class=%22lm-flower%22 style=%22--f:0%22%3E%3Cg class=%22lm-petals%22%3E%3Ccircle cx=%2243.2%22 cy=%2236.1%22 r=%222.03%22/%3E%3Ccircle cx=%2245.7%22 cy=%2237.9%22 r=%222.03%22/%3E%3Ccircle cx=%2244.7%22 cy=%2240.8%22 r=%222.03%22/%3E%3Ccircle cx=%2241.7%22 cy=%2240.8%22 r=%222.03%22/%3E%3Ccircle cx=%2240.7%22 cy=%2237.9%22 r=%222.03%22/%3E%3C/g%3E%3Ccircle class=%22lm-hole%22 cx=%2243.2%22 cy=%2238.7%22 r=%221.43%22/%3E%3Ccircle class=%22lm-dot%22 cx=%2243.2%22 cy=%2238.7%22 r=%220.83%22/%3E%3C/g%3E%3Cg class=%22lm-flower%22 style=%22--f:1%22%3E%3Cg class=%22lm-petals%22%3E%3Ccircle cx=%2248.8%22 cy=%2227.4%22 r=%222.50%22/%3E%3Ccircle cx=%2251.8%22 cy=%2229.6%22 r=%222.50%22/%3E%3Ccircle cx=%2250.7%22 cy=%2233.2%22 r=%222.50%22/%3E%3Ccircle cx=%2246.9%22 cy=%2233.2%22 r=%222.50%22/%3E%3Ccircle cx=%2245.8%22 cy=%2229.6%22 r=%222.50%22/%3E%3C/g%3E%3Ccircle class=%22lm-hole%22 cx=%2248.8%22 cy=%2230.6%22 r=%221.76%22/%3E%3Ccircle class=%22lm-dot%22 cx=%2248.8%22 cy=%2230.6%22 r=%221.02%22/%3E%3C/g%3E%3Cg class=%22lm-flower%22 style=%22--f:2%22%3E%3Cg class=%22lm-petals%22%3E%3Ccircle cx=%2260.0%22 cy=%2221.8%22 r=%223.28%22/%3E%3Ccircle cx=%2264.0%22 cy=%2224.7%22 r=%223.28%22/%3E%3Ccircle cx=%2262.5%22 cy=%2229.4%22 r=%223.28%22/%3E%3Ccircle cx=%2257.5%22 cy=%2229.4%22 r=%223.28%22/%3E%3Ccircle cx=%2256.0%22 cy=%2224.7%22 r=%223.28%22/%3E%3C/g%3E%3Ccircle class=%22lm-hole%22 cx=%2260.0%22 cy=%2226.0%22 r=%222.31%22/%3E%3Ccircle class=%22lm-dot%22 cx=%2260.0%22 cy=%2226.0%22 r=%221.34%22/%3E%3C/g%3E%3Cg class=%22lm-flower%22 style=%22--f:3%22%3E%3Cg class=%22lm-petals%22%3E%3Ccircle cx=%2271.2%22 cy=%2227.4%22 r=%222.50%22/%3E%3Ccircle cx=%2274.2%22 cy=%2229.6%22 r=%222.50%22/%3E%3Ccircle cx=%2273.1%22 cy=%2233.2%22 r=%222.50%22/%3E%3Ccircle cx=%2269.3%22 cy=%2233.2%22 r=%222.50%22/%3E%3Ccircle cx=%2268.2%22 cy=%2229.6%22 r=%222.50%22/%3E%3C/g%3E%3Ccircle class=%22lm-hole%22 cx=%2271.2%22 cy=%2230.6%22 r=%221.76%22/%3E%3Ccircle class=%22lm-dot%22 cx=%2271.2%22 cy=%2230.6%22 r=%221.02%22/%3E%3C/g%3E%3Cg class=%22lm-flower%22 style=%22--f:4%22%3E%3Cg class=%22lm-petals%22%3E%3Ccircle cx=%2276.8%22 cy=%2236.1%22 r=%222.03%22/%3E%3Ccircle cx=%2279.3%22 cy=%2237.9%22 r=%222.03%22/%3E%3Ccircle cx=%2278.3%22 cy=%2240.8%22 r=%222.03%22/%3E%3Ccircle cx=%2275.3%22 cy=%2240.8%22 r=%222.03%22/%3E%3Ccircle cx=%2274.3%22 cy=%2237.9%22 r=%222.03%22/%3E%3C/g%3E%3Ccircle class=%22lm-hole%22 cx=%2276.8%22 cy=%2238.7%22 r=%221.43%22/%3E%3Ccircle class=%22lm-dot%22 cx=%2276.8%22 cy=%2238.7%22 r=%220.83%22/%3E%3C/g%3E%3Cpath class=%22lm-gem%22 d=%22M60 0 L63 5 L60 10 L57 5 Z%22/%3E%3C/svg%3E" />
+  <meta name="theme-color" content="#A0455C" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Jost:wght@300..600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/services.css" />
+</head>
+<body>
+
+  <!-- ============ PRELOADER (logo + text animation) ============ -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="pre-inner">
+      <svg class="pre-logo" viewBox="2 -1 116 118" aria-hidden="true"><path class="lm-veil" d="M60 10 C 28 10, 14 40, 14 72 C 14 94, 10 106, 4 116 L 116 116 C 110 106, 106 94, 106 72 C 106 40, 92 10, 60 10 Z"/><path class="lm-hair" d="M60 22 C 38 22, 30 42, 30 64 C 30 82, 28 96, 24 116 L 96 116 C 92 96, 90 82, 90 64 C 90 42, 82 22, 60 22 Z"/><path class="lm-face" d="M60 34 C 50 36, 44 44, 44 56 C 44 70, 51 80, 60 80 C 69 80, 76 70, 76 56 C 76 44, 70 36, 60 34 Z M53 79 L53 88 C 46 90, 40 98, 38 116 L 82 116 C 80 98, 74 90, 67 88 L 67 79 Z"/><path class="lm-part" d="M60 34 C 56 40, 50 44, 44 48 L 44 44 C 48 40, 54 35, 60 34 Z M60 34 C 64 40, 70 44, 76 48 L 76 44 C 72 40, 66 35, 60 34 Z"/><g class="lm-jewel"><path class="lm-neck" d="M53 89 C 56 95, 64 95, 67 89"/><circle cx="60" cy="97" r="2.2"/><path class="lm-chain" d="M60 35 L60 41"/><path d="M60 41 L62.6 44 L60 47 L57.4 44 Z"/></g><g class="lm-flower" style="--f:0"><g class="lm-petals"><circle cx="43.2" cy="36.1" r="2.03"/><circle cx="45.7" cy="37.9" r="2.03"/><circle cx="44.7" cy="40.8" r="2.03"/><circle cx="41.7" cy="40.8" r="2.03"/><circle cx="40.7" cy="37.9" r="2.03"/></g><circle class="lm-hole" cx="43.2" cy="38.7" r="1.43"/><circle class="lm-dot" cx="43.2" cy="38.7" r="0.83"/></g><g class="lm-flower" style="--f:1"><g class="lm-petals"><circle cx="48.8" cy="27.4" r="2.50"/><circle cx="51.8" cy="29.6" r="2.50"/><circle cx="50.7" cy="33.2" r="2.50"/><circle cx="46.9" cy="33.2" r="2.50"/><circle cx="45.8" cy="29.6" r="2.50"/></g><circle class="lm-hole" cx="48.8" cy="30.6" r="1.76"/><circle class="lm-dot" cx="48.8" cy="30.6" r="1.02"/></g><g class="lm-flower" style="--f:2"><g class="lm-petals"><circle cx="60.0" cy="21.8" r="3.28"/><circle cx="64.0" cy="24.7" r="3.28"/><circle cx="62.5" cy="29.4" r="3.28"/><circle cx="57.5" cy="29.4" r="3.28"/><circle cx="56.0" cy="24.7" r="3.28"/></g><circle class="lm-hole" cx="60.0" cy="26.0" r="2.31"/><circle class="lm-dot" cx="60.0" cy="26.0" r="1.34"/></g><g class="lm-flower" style="--f:3"><g class="lm-petals"><circle cx="71.2" cy="27.4" r="2.50"/><circle cx="74.2" cy="29.6" r="2.50"/><circle cx="73.1" cy="33.2" r="2.50"/><circle cx="69.3" cy="33.2" r="2.50"/><circle cx="68.2" cy="29.6" r="2.50"/></g><circle class="lm-hole" cx="71.2" cy="30.6" r="1.76"/><circle class="lm-dot" cx="71.2" cy="30.6" r="1.02"/></g><g class="lm-flower" style="--f:4"><g class="lm-petals"><circle cx="76.8" cy="36.1" r="2.03"/><circle cx="79.3" cy="37.9" r="2.03"/><circle cx="78.3" cy="40.8" r="2.03"/><circle cx="75.3" cy="40.8" r="2.03"/><circle cx="74.3" cy="37.9" r="2.03"/></g><circle class="lm-hole" cx="76.8" cy="38.7" r="1.43"/><circle class="lm-dot" cx="76.8" cy="38.7" r="0.83"/></g><path class="lm-gem" d="M60 0 L63 5 L60 10 L57 5 Z"/></svg>
+      <p class="pre-title brand-name" data-split>Blush &amp; Bloom</p>
+      <p class="pre-sub">Bridal Studio</p>
+    </div>
+  </div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo" aria-label="Blush &amp; Bloom home">
+        <svg class="logo-mark" viewBox="2 -1 116 118" aria-hidden="true"><path class="lm-veil" d="M60 10 C 28 10, 14 40, 14 72 C 14 94, 10 106, 4 116 L 116 116 C 110 106, 106 94, 106 72 C 106 40, 92 10, 60 10 Z"/><path class="lm-hair" d="M60 22 C 38 22, 30 42, 30 64 C 30 82, 28 96, 24 116 L 96 116 C 92 96, 90 82, 90 64 C 90 42, 82 22, 60 22 Z"/><path class="lm-face" d="M60 34 C 50 36, 44 44, 44 56 C 44 70, 51 80, 60 80 C 69 80, 76 70, 76 56 C 76 44, 70 36, 60 34 Z M53 79 L53 88 C 46 90, 40 98, 38 116 L 82 116 C 80 98, 74 90, 67 88 L 67 79 Z"/><path class="lm-part" d="M60 34 C 56 40, 50 44, 44 48 L 44 44 C 48 40, 54 35, 60 34 Z M60 34 C 64 40, 70 44, 76 48 L 76 44 C 72 40, 66 35, 60 34 Z"/><g class="lm-jewel"><path class="lm-neck" d="M53 89 C 56 95, 64 95, 67 89"/><circle cx="60" cy="97" r="2.2"/><path class="lm-chain" d="M60 35 L60 41"/><path d="M60 41 L62.6 44 L60 47 L57.4 44 Z"/></g><g class="lm-flower" style="--f:0"><g class="lm-petals"><circle cx="43.2" cy="36.1" r="2.03"/><circle cx="45.7" cy="37.9" r="2.03"/><circle cx="44.7" cy="40.8" r="2.03"/><circle cx="41.7" cy="40.8" r="2.03"/><circle cx="40.7" cy="37.9" r="2.03"/></g><circle class="lm-hole" cx="43.2" cy="38.7" r="1.43"/><circle class="lm-dot" cx="43.2" cy="38.7" r="0.83"/></g><g class="lm-flower" style="--f:1"><g class="lm-petals"><circle cx="48.8" cy="27.4" r="2.50"/><circle cx="51.8" cy="29.6" r="2.50"/><circle cx="50.7" cy="33.2" r="2.50"/><circle cx="46.9" cy="33.2" r="2.50"/><circle cx="45.8" cy="29.6" r="2.50"/></g><circle class="lm-hole" cx="48.8" cy="30.6" r="1.76"/><circle class="lm-dot" cx="48.8" cy="30.6" r="1.02"/></g><g class="lm-flower" style="--f:2"><g class="lm-petals"><circle cx="60.0" cy="21.8" r="3.28"/><circle cx="64.0" cy="24.7" r="3.28"/><circle cx="62.5" cy="29.4" r="3.28"/><circle cx="57.5" cy="29.4" r="3.28"/><circle cx="56.0" cy="24.7" r="3.28"/></g><circle class="lm-hole" cx="60.0" cy="26.0" r="2.31"/><circle class="lm-dot" cx="60.0" cy="26.0" r="1.34"/></g><g class="lm-flower" style="--f:3"><g class="lm-petals"><circle cx="71.2" cy="27.4" r="2.50"/><circle cx="74.2" cy="29.6" r="2.50"/><circle cx="73.1" cy="33.2" r="2.50"/><circle cx="69.3" cy="33.2" r="2.50"/><circle cx="68.2" cy="29.6" r="2.50"/></g><circle class="lm-hole" cx="71.2" cy="30.6" r="1.76"/><circle class="lm-dot" cx="71.2" cy="30.6" r="1.02"/></g><g class="lm-flower" style="--f:4"><g class="lm-petals"><circle cx="76.8" cy="36.1" r="2.03"/><circle cx="79.3" cy="37.9" r="2.03"/><circle cx="78.3" cy="40.8" r="2.03"/><circle cx="75.3" cy="40.8" r="2.03"/><circle cx="74.3" cy="37.9" r="2.03"/></g><circle class="lm-hole" cx="76.8" cy="38.7" r="1.43"/><circle class="lm-dot" cx="76.8" cy="38.7" r="0.83"/></g><path class="lm-gem" d="M60 0 L63 5 L60 10 L57 5 Z"/></svg>
+        <span class="logo-text">
+          <strong class="brand-name">Blush &amp; Bloom</strong>
+          <small>Bridal Studio</small>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li class="has-dropdown" id="homeDropdown">
+            <button class="nav-link dropdown-toggle" type="button" data-home
+                    aria-haspopup="true" aria-expanded="false" aria-controls="homeMenu">
+              Home <svg class="lucide lucide-chevron-down chev" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <ul class="dropdown" id="homeMenu">
+              <li><a href="index.html" class="dropdown-link"><svg class="lucide lucide-layout-template" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="7" x="3" y="3" rx="1"/><rect width="9" height="7" x="3" y="14" rx="1"/><rect width="5" height="7" x="16" y="14" rx="1"/></svg><span>Home 1</span><small>Classic</small></a></li>
+              <li><a href="home2.html" class="dropdown-link"><svg class="lucide lucide-layout-dashboard" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></svg><span>Home 2</span><small>Modern</small></a></li>
+            </ul>
+          </li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+        </ul>
+        <a class="btn btn-primary btn-book nav-book-mobile" href="login.html">
+          <svg class="lucide lucide-calendar-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h18V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7"/><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21.29 14.7a2.43 2.43 0 0 0-2.65-.52c-.3.12-.57.3-.8.53l-.34.34-.35-.34a2.43 2.43 0 0 0-2.65-.53c-.3.12-.56.3-.79.53-.95.94-1 2.53.2 3.74L17.5 22l3.6-3.55c1.2-1.21 1.14-2.8.19-3.74Z"/></svg><span>Book Now</span>
+        </a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark theme" title="Light / Dark">
+          <svg class="lucide lucide-moon i-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          <svg class="lucide lucide-sun i-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+        </button>
+        <button class="icon-btn dir-toggle" id="dirToggle" type="button" aria-label="Switch text direction" title="LTR / RTL">
+          <span class="dir-label">RTL</span>
+        </button>
+        <a class="btn btn-primary btn-book nav-book" href="login.html">
+          <svg class="lucide lucide-calendar-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h18V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7"/><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21.29 14.7a2.43 2.43 0 0 0-2.65-.52c-.3.12-.57.3-.8.53l-.34.34-.35-.34a2.43 2.43 0 0 0-2.65-.53c-.3.12-.56.3-.79.53-.95.94-1 2.53.2 3.74L17.5 22l3.6-3.55c1.2-1.21 1.14-2.8.19-3.74Z"/></svg><span>Book Now</span>
+        </a>
+        <button class="hamburger" id="hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+          <svg class="lucide lucide-menu i-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+          <svg class="lucide lucide-x i-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+
+  <main>
+    <!-- ============ HERO: full background image + content overlay ============ -->
+    <section class="s-hero" aria-label="Our services">
+      <div class="s-hero-bg" aria-hidden="true">
+        <span class="photo" style="--img:url('../Images/service-hero.jpg'); --ph:linear-gradient(160deg,#c4587a,#5a2f37)"></span>
+      </div>
+
+      <div class="container s-hero-inner">
+        <div class="s-tag s-anim" style="--i:0">
+          <p class="eyebrow">Our Services</p>
+          <div class="ornament" aria-hidden="true"><span class="o-line"></span><span class="o-diamond"></span><span class="o-line"></span></div>
+        </div>
+        <h1 class="s-hero-title s-anim" style="--i:1">Every detail of your <em>bridal look</em>, beautifully done</h1>
+        <p class="s-hero-text s-anim" style="--i:2">Makeup, hair, draping and skin prep for every ceremony, delivered by artists who plan around you, not the clock.</p>
+        <div class="s-hero-cta s-anim" style="--i:3">
+          <a class="btn btn-primary btn-book" href="login.html"><svg class="lucide lucide-calendar-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h18V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7"/><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21.29 14.7a2.43 2.43 0 0 0-2.65-.52c-.3.12-.57.3-.8.53l-.34.34-.35-.34a2.43 2.43 0 0 0-2.65-.53c-.3.12-.56.3-.79.53-.95.94-1 2.53.2 3.74L17.5 22l3.6-3.55c1.2-1.21 1.14-2.8.19-3.74Z"/></svg><span>Book a Trial</span></a>
+          <button class="btn btn-outline" type="button" data-scroll-to=".s-addons"><svg class="lucide lucide-calculator" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="16" height="20" x="4" y="2" rx="2"/><line x1="8" x2="16" y1="6" y2="6"/><line x1="16" x2="16" y1="14" y2="18"/><path d="M16 10h.01"/><path d="M12 10h.01"/><path d="M8 10h.01"/><path d="M12 14h.01"/><path d="M8 14h.01"/><path d="M12 18h.01"/><path d="M8 18h.01"/></svg><span>Build Your Package</span></button>
+        </div>
+      </div>
+
+      <button class="s-hero-scroll" type="button" data-scroll-to=".s-grid-section" aria-label="Scroll to services">
+        <svg class="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+      </button>
+    </section>
+
+    <!-- ============ 1) SERVICES GRID (white) ============ -->
+    <section class="s-grid-section section">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">What We Offer</p>
+          <h2 class="section-title">Services for every <em>ceremony</em></h2>
+          <div class="ornament" aria-hidden="true"><span class="o-line"></span><span class="o-diamond"></span><span class="o-line"></span></div>
+        </header>
+
+        <div class="s-cards">
+          <article class="s-card reveal" style="--d:0s">
+            <a class="s-card-img" href="servicedetails1.html" tabindex="-1" aria-hidden="true"><span class="photo" style="--img:url('../Images/service-1.jpg'); --ph:linear-gradient(160deg,#f6e2df,#c4587a)" role="img" aria-label="Makeup artist applying bridal makeup"></span></a>
+            <div class="s-card-body">
+              <h3><a href="servicedetails1.html">Bridal Makeup</a></h3>
+              <p>Long-wear HD makeup matched to your skin, outfit and venue lighting.</p>
+              <div class="s-card-foot">
+                <span class="s-price"><span>Starting at</span><strong>₹18,999</strong></span>
+                <a class="btn btn-primary btn-book btn-sm" href="servicedetails1.html"><svg class="lucide lucide-calendar-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h18V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7"/><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21.29 14.7a2.43 2.43 0 0 0-2.65-.52c-.3.12-.57.3-.8.53l-.34.34-.35-.34a2.43 2.43 0 0 0-2.65-.53c-.3.12-.56.3-.79.53-.95.94-1 2.53.2 3.74L17.5 22l3.6-3.55c1.2-1.21 1.14-2.8.19-3.74Z"/></svg><span>Book</span></a>
+              </div>
+            </div>
+          </article>
+          <article class="s-card reveal" style="--d:.08s">
+            <a class="s-card-img" href="servicedetails2.html" tabindex="-1" aria-hidden="true"><span class="photo" style="--img:url('../Images/service-2.jpg'); --ph:linear-gradient(160deg,#f7eedf,#c9a96e)" role="img" aria-label="Makeup products for an airbrush finish"></span></a>
+            <div class="s-card-body">
+              <h3><a href="servicedetails2.html">Airbrush Finish</a></h3>
+              <p>A weightless, flawless base that stays fresh through heat and tears.</p>
+              <div class="s-card-foot">
+                <span class="s-price"><span>Starting at</span><strong>₹24,999</strong></span>
+                <a class="btn btn-primary btn-book btn-sm" href="servicedetails2.html"><svg class="lucide lucide-calendar-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h18V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7"/><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21.29 14.7a2.43 2.43 0 0 0-2.65-.52c-.3.12-.57.3-.8.53l-.34.34-.35-.34a2.43 2.43 0 0 0-2.65-.53c-.3.12-.56.3-.79.53-.95.94-1 2.53.2 3.74L17.5 22l3.6-3.55c1.2-1.21 1.14-2.8.19-3.74Z"/></svg><span>Book</span></a>
+              </div>
+            </div>
+          </article>
+          <article class="s-card reveal" style="--d:.16s">
+            <a class="s-card-img" href="servicedetails3.html" tabindex="-1" aria-hidden="true"><span class="photo" style="--img:url('../Images/service-3.jpg'); --ph:linear-gradient(160deg,#f2d3cd,#a0455c)" role="img" aria-label="Hair stylist at work"></span></a>
+            <div class="s-card-body">
+              <h3><a href="servicedetails3.html">Bridal Hairstyling</a></h3>
+              <p>Sculpted buns, braids and waves set with florals or accessories.</p>
+              <div class="s-card-foot">
+                <span class="s-price"><span>Starting at</span><strong>₹7,999</strong></span>
+                <a class="btn btn-primary btn-book btn-sm" href="servicedetails3.html"><svg class="lucide lucide-calendar-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h18V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7"/><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21.29 14.7a2.43 2.43 0 0 0-2.65-.52c-.3.12-.57.3-.8.53l-.34.34-.35-.34a2.43 2.43 0 0 0-2.65-.53c-.3.12-.56.3-.79.53-.95.94-1 2.53.2 3.74L17.5 22l3.6-3.55c1.2-1.21 1.14-2.8.19-3.74Z"/></svg><span>Book</span></a>
+              </div>
+            </div>
+          </article>
+          <article class="s-card reveal" style="--d:0s">
+            <a class="s-card-img" href="servicedetails4.html" tabindex="-1" aria-hidden="true"><span class="photo" style="--img:url('../Images/service-4.jpg'); --ph:linear-gradient(160deg,#dcaaa3,#8a4a55)" role="img" aria-label="Bride in draped outfit with jewellery"></span></a>
+            <div class="s-card-body">
+              <h3><a href="servicedetails4.html">Draping &amp; Jewellery</a></h3>
+              <p>Saree, lehenga and dupatta draping with secure jewellery setting.</p>
+              <div class="s-card-foot">
+                <span class="s-price"><span>Starting at</span><strong>₹4,999</strong></span>
+                <a class="btn btn-primary btn-book btn-sm" href="servicedetails4.html"><svg class="lucide lucide-calendar-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h18V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7"/><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21.29 14.7a2.43 2.43 0 0 0-2.65-.52c-.3.12-.57.3-.8.53l-.34.34-.35-.34a2.43 2.43 0 0 0-2.65-.53c-.3.12-.56.3-.79.53-.95.94-1 2.53.2 3.74L17.5 22l3.6-3.55c1.2-1.21 1.14-2.8.19-3.74Z"/></svg><span>Book</span></a>
+              </div>
+            </div>
+          </article>
+          <article class="s-card reveal" style="--d:.08s">
+            <a class="s-card-img" href="servicedetails5.html" tabindex="-1" aria-hidden="true"><span class="photo" style="--img:url('../Images/service-5.jpg'); --ph:linear-gradient(160deg,#f7eedf,#c9a96e)" role="img" aria-label="Bridal party getting ready"></span></a>
+            <div class="s-card-body">
+              <h3><a href="servicedetails5.html">Family &amp; Bridesmaids</a></h3>
+              <p>Coordinated looks for mothers, sisters and the bridal party.</p>
+              <div class="s-card-foot">
+                <span class="s-price"><span>Starting at</span><strong>₹4,499<small>/ person</small></strong></span>
+                <a class="btn btn-primary btn-book btn-sm" href="servicedetails5.html"><svg class="lucide lucide-calendar-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h18V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7"/><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21.29 14.7a2.43 2.43 0 0 0-2.65-.52c-.3.12-.57.3-.8.53l-.34.34-.35-.34a2.43 2.43 0 0 0-2.65-.53c-.3.12-.56.3-.79.53-.95.94-1 2.53.2 3.74L17.5 22l3.6-3.55c1.2-1.21 1.14-2.8.19-3.74Z"/></svg><span>Book</span></a>
+              </div>
+            </div>
+          </article>
+          <article class="s-card reveal" style="--d:.16s">
+            <figure class="s-card-img"><span class="photo" style="--img:url('../Images/service-6.jpg'); --ph:linear-gradient(160deg,#f6e2df,#c4587a)" role="img" aria-label="Skin care treatment"></span></figure>
+            <div class="s-card-body">
+              <h3>Pre-Bridal Skin Prep</h3>
+              <p>A personalised routine and sessions for calm, glowing skin.</p>
+              <div class="s-card-foot">
+                <span class="s-price"><span>Starting at</span><strong>₹9,999</strong></span>
+                <a class="btn btn-primary btn-book btn-sm" href="contact.html"><svg class="lucide lucide-calendar-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h18V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7"/><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21.29 14.7a2.43 2.43 0 0 0-2.65-.52c-.3.12-.57.3-.8.53l-.34.34-.35-.34a2.43 2.43 0 0 0-2.65-.53c-.3.12-.56.3-.79.53-.95.94-1 2.53.2 3.74L17.5 22l3.6-3.55c1.2-1.21 1.14-2.8.19-3.74Z"/></svg><span>Book</span></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 2) BUILD YOUR PACKAGE — add-ons (rose tint) ============ -->
+    <section class="s-addons section band-rose">
+      <div class="container s-addons-grid">
+        <div class="s-addons-intro reveal from-left">
+          <div class="s-tag s-tag-start">
+            <p class="eyebrow">Add-Ons</p>
+            <div class="ornament" aria-hidden="true"><span class="o-line"></span><span class="o-diamond"></span><span class="o-line"></span></div>
+          </div>
+          <h2 class="section-title">Build your <em>package</em></h2>
+          <p class="s-lead">Start with bridal makeup and hair, then add the extras you need. Your estimate updates as you choose.</p>
+
+          <div class="s-total" aria-live="polite">
+            <span class="s-total-label">Estimated total</span>
+            <strong class="s-total-amount">₹<span id="estTotal">26,998</span></strong>
+            <span class="s-total-note">Includes bridal makeup (₹18,999) + hairstyling (₹7,999)</span>
+            <a class="btn btn-primary btn-book" href="login.html"><svg class="lucide lucide-calendar-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h18V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7"/><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21.29 14.7a2.43 2.43 0 0 0-2.65-.52c-.3.12-.57.3-.8.53l-.34.34-.35-.34a2.43 2.43 0 0 0-2.65-.53c-.3.12-.56.3-.79.53-.95.94-1 2.53.2 3.74L17.5 22l3.6-3.55c1.2-1.21 1.14-2.8.19-3.74Z"/></svg><span>Book This Package</span></a>
+          </div>
+        </div>
+
+        <ul class="s-addon-list reveal from-right" id="addonList">
+          <li><label class="s-addon"><input type="checkbox" value="4999" /><span class="s-addon-box"><svg class="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><span class="s-addon-icon"><svg class="lucide lucide-gem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12l4 6-10 13L2 9Z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/></svg></span><span class="s-addon-text"><strong>Draping &amp; jewellery setting</strong><small>Saree / lehenga + dupatta</small></span><span class="s-addon-price">+₹4,999</span></label></li>
+          <li><label class="s-addon"><input type="checkbox" value="6999" /><span class="s-addon-box"><svg class="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><span class="s-addon-icon"><svg class="lucide lucide-sparkles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></svg></span><span class="s-addon-text"><strong>Upgrade to airbrush</strong><small>Weightless, sweat-proof base</small></span><span class="s-addon-price">+₹6,999</span></label></li>
+          <li><label class="s-addon"><input type="checkbox" value="5999" /><span class="s-addon-box"><svg class="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><span class="s-addon-icon"><svg class="lucide lucide-clock" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span><span class="s-addon-text"><strong>On-site touch-up artist</strong><small>Stays for 4 hours after your look</small></span><span class="s-addon-price">+₹5,999</span></label></li>
+          <li><label class="s-addon"><input type="checkbox" value="3999" /><span class="s-addon-box"><svg class="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><span class="s-addon-icon"><svg class="lucide lucide-wand-sparkles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.64 3.64-1.28-1.28a1.21 1.21 0 0 0-1.72 0L2.36 18.64a1.21 1.21 0 0 0 0 1.72l1.28 1.28a1.2 1.2 0 0 0 1.72 0L21.64 5.36a1.2 1.2 0 0 0 0-1.72"/><path d="m14 7 3 3"/><path d="M5 6v4"/><path d="M19 14v4"/><path d="M10 2v2"/><path d="M7 8H3"/><path d="M21 16h-4"/><path d="M11 3H9"/></svg></span><span class="s-addon-text"><strong>Pre-wedding trial</strong><small>Full look, refined with you</small></span><span class="s-addon-price">+₹3,999</span></label></li>
+          <li><label class="s-addon"><input type="checkbox" value="1499" /><span class="s-addon-box"><svg class="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><span class="s-addon-icon"><svg class="lucide lucide-flower-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5a3 3 0 1 1 3 3m-3-3a3 3 0 1 0-3 3m3-3v1M9 8a3 3 0 1 0 3 3M9 8h1m5 0a3 3 0 1 1-3 3m3-3h-1m-2 3v-1"/><circle cx="12" cy="8" r="2"/><path d="M12 10v12"/><path d="M12 22c4.2 0 7-1.667 7-5-4.2 0-7 1.667-7 5Z"/><path d="M12 22c-4.2 0-7-1.667-7-5 4.2 0 7 1.667 7 5Z"/></svg></span><span class="s-addon-text"><strong>Fresh flower setting</strong><small>Jasmine, roses or orchids</small></span><span class="s-addon-price">+₹1,499</span></label></li>
+          <li><label class="s-addon"><input type="checkbox" value="2499" /><span class="s-addon-box"><svg class="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><span class="s-addon-icon"><svg class="lucide lucide-hand" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 11V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2"/><path d="M14 10V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2"/><path d="M10 10.5V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/></svg></span><span class="s-addon-text"><strong>Nail art &amp; hand glow</strong><small>Bridal manicure finish</small></span><span class="s-addon-price">+₹2,499</span></label></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ 3) HOW BOOKING WORKS (white) ============ -->
+    <section class="s-steps-section section">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">How It Works</p>
+          <h2 class="section-title">Booking in four easy <em>steps</em></h2>
+          <div class="ornament" aria-hidden="true"><span class="o-line"></span><span class="o-diamond"></span><span class="o-line"></span></div>
+        </header>
+
+        <ol class="s-steps" data-animate>
+          <li class="s-step reveal" style="--d:0s"><span class="s-step-no">01</span><span class="s-step-icon"><svg class="lucide lucide-message-circle-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/><path d="M15.8 9.2a2.5 2.5 0 0 0-3.5 0l-.3.4-.35-.3a2.42 2.42 0 1 0-3.2 3.6l3.6 3.5 3.6-3.5c1.2-1.2 1.1-2.7.2-3.7"/></svg></span><h3>Enquire</h3><p>Share your dates, ceremonies and inspiration.</p></li>
+          <li class="s-step reveal" style="--d:.12s"><span class="s-step-no">02</span><span class="s-step-icon"><svg class="lucide lucide-calendar-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h18V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7"/><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21.29 14.7a2.43 2.43 0 0 0-2.65-.52c-.3.12-.57.3-.8.53l-.34.34-.35-.34a2.43 2.43 0 0 0-2.65-.53c-.3.12-.56.3-.79.53-.95.94-1 2.53.2 3.74L17.5 22l3.6-3.55c1.2-1.21 1.14-2.8.19-3.74Z"/></svg></span><h3>Reserve</h3><p>Confirm your artist with a small advance.</p></li>
+          <li class="s-step reveal" style="--d:.24s"><span class="s-step-no">03</span><span class="s-step-icon"><svg class="lucide lucide-wand-sparkles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.64 3.64-1.28-1.28a1.21 1.21 0 0 0-1.72 0L2.36 18.64a1.21 1.21 0 0 0 0 1.72l1.28 1.28a1.2 1.2 0 0 0 1.72 0L21.64 5.36a1.2 1.2 0 0 0 0-1.72"/><path d="m14 7 3 3"/><path d="M5 6v4"/><path d="M19 14v4"/><path d="M10 2v2"/><path d="M7 8H3"/><path d="M21 16h-4"/><path d="M11 3H9"/></svg></span><h3>Trial</h3><p>Try and refine your look until it feels just right.</p></li>
+          <li class="s-step reveal" style="--d:.36s"><span class="s-step-no">04</span><span class="s-step-icon"><svg class="lucide lucide-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></span><h3>Celebrate</h3><p>We arrive early, calm and fully prepared.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ 4) CTA BAND (deep rose) ============ -->
+    <section class="s-cta">
+      <div class="container s-cta-inner reveal zoom">
+        <div class="s-cta-copy">
+          <h2>Not sure which services you need?</h2>
+          <p>Book a free 20-minute call and we'll suggest the right combination for your ceremonies and budget.</p>
+        </div>
+        <div class="s-cta-actions">
+          <a class="btn btn-light btn-book" href="contact.html"><svg class="lucide lucide-calendar-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h18V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7"/><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21.29 14.7a2.43 2.43 0 0 0-2.65-.52c-.3.12-.57.3-.8.53l-.34.34-.35-.34a2.43 2.43 0 0 0-2.65-.53c-.3.12-.56.3-.79.53-.95.94-1 2.53.2 3.74L17.5 22l3.6-3.55c1.2-1.21 1.14-2.8.19-3.74Z"/></svg><span>Book Free Call</span></a>
+          <a href="tel:+919876543210" class="s-cta-phone"><svg class="lucide lucide-phone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+91 98765 43210</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER (rose tint) ============ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand reveal" style="--d:0s">
+        <a href="index.html" class="logo logo-footer">
+          <svg class="logo-mark" viewBox="2 -1 116 118" aria-hidden="true"><path class="lm-veil" d="M60 10 C 28 10, 14 40, 14 72 C 14 94, 10 106, 4 116 L 116 116 C 110 106, 106 94, 106 72 C 106 40, 92 10, 60 10 Z"/><path class="lm-hair" d="M60 22 C 38 22, 30 42, 30 64 C 30 82, 28 96, 24 116 L 96 116 C 92 96, 90 82, 90 64 C 90 42, 82 22, 60 22 Z"/><path class="lm-face" d="M60 34 C 50 36, 44 44, 44 56 C 44 70, 51 80, 60 80 C 69 80, 76 70, 76 56 C 76 44, 70 36, 60 34 Z M53 79 L53 88 C 46 90, 40 98, 38 116 L 82 116 C 80 98, 74 90, 67 88 L 67 79 Z"/><path class="lm-part" d="M60 34 C 56 40, 50 44, 44 48 L 44 44 C 48 40, 54 35, 60 34 Z M60 34 C 64 40, 70 44, 76 48 L 76 44 C 72 40, 66 35, 60 34 Z"/><g class="lm-jewel"><path class="lm-neck" d="M53 89 C 56 95, 64 95, 67 89"/><circle cx="60" cy="97" r="2.2"/><path class="lm-chain" d="M60 35 L60 41"/><path d="M60 41 L62.6 44 L60 47 L57.4 44 Z"/></g><g class="lm-flower" style="--f:0"><g class="lm-petals"><circle cx="43.2" cy="36.1" r="2.03"/><circle cx="45.7" cy="37.9" r="2.03"/><circle cx="44.7" cy="40.8" r="2.03"/><circle cx="41.7" cy="40.8" r="2.03"/><circle cx="40.7" cy="37.9" r="2.03"/></g><circle class="lm-hole" cx="43.2" cy="38.7" r="1.43"/><circle class="lm-dot" cx="43.2" cy="38.7" r="0.83"/></g><g class="lm-flower" style="--f:1"><g class="lm-petals"><circle cx="48.8" cy="27.4" r="2.50"/><circle cx="51.8" cy="29.6" r="2.50"/><circle cx="50.7" cy="33.2" r="2.50"/><circle cx="46.9" cy="33.2" r="2.50"/><circle cx="45.8" cy="29.6" r="2.50"/></g><circle class="lm-hole" cx="48.8" cy="30.6" r="1.76"/><circle class="lm-dot" cx="48.8" cy="30.6" r="1.02"/></g><g class="lm-flower" style="--f:2"><g class="lm-petals"><circle cx="60.0" cy="21.8" r="3.28"/><circle cx="64.0" cy="24.7" r="3.28"/><circle cx="62.5" cy="29.4" r="3.28"/><circle cx="57.5" cy="29.4" r="3.28"/><circle cx="56.0" cy="24.7" r="3.28"/></g><circle class="lm-hole" cx="60.0" cy="26.0" r="2.31"/><circle class="lm-dot" cx="60.0" cy="26.0" r="1.34"/></g><g class="lm-flower" style="--f:3"><g class="lm-petals"><circle cx="71.2" cy="27.4" r="2.50"/><circle cx="74.2" cy="29.6" r="2.50"/><circle cx="73.1" cy="33.2" r="2.50"/><circle cx="69.3" cy="33.2" r="2.50"/><circle cx="68.2" cy="29.6" r="2.50"/></g><circle class="lm-hole" cx="71.2" cy="30.6" r="1.76"/><circle class="lm-dot" cx="71.2" cy="30.6" r="1.02"/></g><g class="lm-flower" style="--f:4"><g class="lm-petals"><circle cx="76.8" cy="36.1" r="2.03"/><circle cx="79.3" cy="37.9" r="2.03"/><circle cx="78.3" cy="40.8" r="2.03"/><circle cx="75.3" cy="40.8" r="2.03"/><circle cx="74.3" cy="37.9" r="2.03"/></g><circle class="lm-hole" cx="76.8" cy="38.7" r="1.43"/><circle class="lm-dot" cx="76.8" cy="38.7" r="0.83"/></g><path class="lm-gem" d="M60 0 L63 5 L60 10 L57 5 Z"/></svg>
+          <span class="logo-text"><strong class="brand-name">Blush &amp; Bloom</strong><small>Bridal Studio</small></span>
+        </a>
+        <p>Timeless bridal makeup and wedding styling for the moments you will remember forever.</p>
+        <!-- Social links: replace the URLs with the studio's own profiles -->
+        <ul class="footer-social" aria-label="Follow Blush &amp; Bloom">
+          <li style="--s:0"><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg class="lucide lucide-instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a></li>
+          <li style="--s:1"><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><svg class="lucide lucide-facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a></li>
+          <li style="--s:2"><a href="https://www.pinterest.com/" target="_blank" rel="noopener" aria-label="Pinterest" title="Pinterest"><svg class="lucide lucide-pinterest" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M10.8 21.6 13.1 12"/><path d="M9.4 14.6c-.9-.8-1.4-2-1.1-3.4.4-2.1 2.3-3.5 4.4-3.3 2.2.2 3.7 2 3.4 4.2-.2 1.9-1.4 3.4-2.9 3.4-1.1 0-1.8-.9-1.5-1.9l.6-2.4"/></svg></a></li>
+          <li style="--s:3"><a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><svg class="lucide lucide-youtube" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg></a></li>
+          <li style="--s:4"><a href="https://wa.me/919876543210" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp"><svg class="lucide lucide-whatsapp" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/><path d="M9.2 8.6c-.3 2.9 3.3 6.5 6.2 6.2l.8-1.3-1.7-1-.9.6c-1-.4-2.1-1.5-2.5-2.5l.6-.9-1-1.7Z"/></svg></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col reveal" style="--d:.1s">
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col reveal" style="--d:.2s">
+        <h4>Contact</h4>
+        <ul class="footer-links footer-contact">
+          <li><svg class="lucide lucide-map-pin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg><span class="footer-address">Plot 24, Road No. 36, Jubilee Hills, Hyderabad, Telangana 500033</span></li>
+          <li><svg class="lucide lucide-smartphone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg><a href="tel:+919876543210" dir="ltr">+91 98765 43210</a></li>
+          <li><svg class="lucide lucide-mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><a href="mailto:hello@blushandbloom.in">hello@blushandbloom.in</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col reveal" style="--d:.3s">
+        <h4>Hours</h4>
+        <ul class="footer-links footer-contact">
+          <li><svg class="lucide lucide-clock" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>Mon – Sat: 10am – 8pm</span></li>
+          <li><svg class="lucide lucide-calendar-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h18V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7"/><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21.29 14.7a2.43 2.43 0 0 0-2.65-.52c-.3.12-.57.3-.8.53l-.34.34-.35-.34a2.43 2.43 0 0 0-2.65-.53c-.3.12-.56.3-.79.53-.95.94-1 2.53.2 3.74L17.5 22l3.6-3.55c1.2-1.21 1.14-2.8.19-3.74Z"/></svg><span>Sunday: By appointment</span></li>
+          <li><svg class="lucide lucide-sparkles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></svg><span>Wedding days: From 4am</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <div class="footer-bottom-inner">
+        <p>© <span id="year"></span> <span class="brand-name">Blush &amp; Bloom</span> Bridal Studio. All rights reserved.</p>
+        <ul class="footer-legal">
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top">
+    <svg class="lucide lucide-arrow-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg>
+  </button>
+
+  <script src="js/services.js" defer></script>
+</body>
+</html>

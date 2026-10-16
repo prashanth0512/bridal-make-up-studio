@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Blush &amp; Bloom Bridal Studio</title>
+  <meta name="description" content="Bridal, engagement and reception looks by Blush &amp; Bloom: a filterable gallery, before and after transformations and our signature styles." />
+
+  <!-- Apply saved theme / direction before paint (prevents flash) -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('bb-theme');
+        var d = localStorage.getItem('bb-dir');
+        if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', t);
+        if (d) document.documentElement.setAttribute('dir', d);
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- Favicon: floral-silhouette bride (inline SVG, no extra file) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%222 -1 116 118%22%3E%3Cstyle%3E.lm-veil%7Bfill:%23C9A35F%7D.lm-hair,.lm-part,.lm-hole%7Bfill:%23A0455C%7D.lm-face,.lm-petals%7Bfill:%23fff%7D.lm-jewel,.lm-dot,.lm-gem%7Bfill:%23C9A35F%7D.lm-neck,.lm-chain%7Bfill:none;stroke:%23C9A35F;stroke-width:2.4;stroke-linecap:round%7D%3C/style%3E%3Cpath class=%22lm-veil%22 d=%22M60 10 C 28 10, 14 40, 14 72 C 14 94, 10 106, 4 116 L 116 116 C 110 106, 106 94, 106 72 C 106 40, 92 10, 60 10 Z%22/%3E%3Cpath class=%22lm-hair%22 d=%22M60 22 C 38 22, 30 42, 30 64 C 30 82, 28 96, 24 116 L 96 116 C 92 96, 90 82, 90 64 C 90 42, 82 22, 60 22 Z%22/%3E%3Cpath class=%22lm-face%22 d=%22M60 34 C 50 36, 44 44, 44 56 C 44 70, 51 80, 60 80 C 69 80, 76 70, 76 56 C 76 44, 70 36, 60 34 Z M53 79 L53 88 C 46 90, 40 98, 38 116 L 82 116 C 80 98, 74 90, 67 88 L 67 79 Z%22/%3E%3Cpath class=%22lm-part%22 d=%22M60 34 C 56 40, 50 44, 44 48 L 44 44 C 48 40, 54 35, 60 34 Z M60 34 C 64 40, 70 44, 76 48 L 76 44 C 72 40, 66 35, 60 34 Z%22/%3E%3Cg class=%22lm-jewel%22%3E%3Cpath class=%22lm-neck%22 d=%22M53 89 C 56 95, 64 95, 67 89%22/%3E%3Ccircle cx=%2260%22 cy=%2297%22 r=%222.2%22/%3E%3Cpath class=%22lm-chain%22 d=%22M60 35 L60 41%22/%3E%3Cpath d=%22M60 41 L62.6 44 L60 47 L57.4 44 Z%22/%3E%3C/g%3E%3Cg class=%22lm-flower%22 style=%22--f:0%22%3E%3Cg class=%22lm-petals%22%3E%3Ccircle cx=%2243.2%22 cy=%2236.1%22 r=%222.03%22/%3E%3Ccircle cx=%2245.7%22 cy=%2237.9%22 r=%222.03%22/%3E%3Ccircle cx=%2244.7%22 cy=%2240.8%22 r=%222.03%22/%3E%3Ccircle cx=%2241.7%22 cy=%2240.8%22 r=%222.03%22/%3E%3Ccircle cx=%2240.7%22 cy=%2237.9%22 r=%222.03%22/%3E%3C/g%3E%3Ccircle class=%22lm-hole%22 cx=%2243.2%22 cy=%2238.7%22 r=%221.43%22/%3E%3Ccircle class=%22lm-dot%22 cx=%2243.2%22 cy=%2238.7%22 r=%220.83%22/%3E%3C/g%3E%3Cg class=%22lm-flower%22 style=%22--f:1%22%3E%3Cg class=%22lm-petals%22%3E%3Ccircle cx=%2248.8%22 cy=%2227.4%22 r=%222.50%22/%3E%3Ccircle cx=%2251.8%22 cy=%2229.6%22 r=%222.50%22/%3E%3Ccircle cx=%2250.7%22 cy=%2233.2%22 r=%222.50%22/%3E%3Ccircle cx=%2246.9%22 cy=%2233.2%22 r=%222.50%22/%3E%3Ccircle cx=%2245.8%22 cy=%2229.6%22 r=%222.50%22/%3E%3C/g%3E%3Ccircle class=%22lm-hole%22 cx=%2248.8%22 cy=%2230.6%22 r=%221.76%22/%3E%3Ccircle class=%22lm-dot%22 cx=%2248.8%22 cy=%2230.6%22 r=%221.02%22/%3E%3C/g%3E%3Cg class=%22lm-flower%22 style=%22--f:2%22%3E%3Cg class=%22lm-petals%22%3E%3Ccircle cx=%2260.0%22 cy=%2221.8%22 r=%223.28%22/%3E%3Ccircle cx=%2264.0%22 cy=%2224.7%22 r=%223.28%22/%3E%3Ccircle cx=%2262.5%22 cy=%2229.4%22 r=%223.28%22/%3E%3Ccircle cx=%2257.5%22 cy=%2229.4%22 r=%223.28%22/%3E%3Ccircle cx=%2256.0%22 cy=%2224.7%22 r=%223.28%22/%3E%3C/g%3E%3Ccircle class=%22lm-hole%22 cx=%2260.0%22 cy=%2226.0%22 r=%222.31%22/%3E%3Ccircle class=%22lm-dot%22 cx=%2260.0%22 cy=%2226.0%22 r=%221.34%22/%3E%3C/g%3E%3Cg class=%22lm-flower%22 style=%22--f:3%22%3E%3Cg class=%22lm-petals%22%3E%3Ccircle cx=%2271.2%22 cy=%2227.4%22 r=%222.50%22/%3E%3Ccircle cx=%2274.2%22 cy=%2229.6%22 r=%222.50%22/%3E%3Ccircle cx=%2273.1%22 cy=%2233.2%22 r=%222.50%22/%3E%3Ccircle cx=%2269.3%22 cy=%2233.2%22 r=%222.50%22/%3E%3Ccircle cx=%2268.2%22 cy=%2229.6%22 r=%222.50%22/%3E%3C/g%3E%3Ccircle class=%22lm-hole%22 cx=%2271.2%22 cy=%2230.6%22 r=%221.76%22/%3E%3Ccircle class=%22lm-dot%22 cx=%2271.2%22 cy=%2230.6%22 r=%221.02%22/%3E%3C/g%3E%3Cg class=%22lm-flower%22 style=%22--f:4%22%3E%3Cg class=%22lm-petals%22%3E%3Ccircle cx=%2276.8%22 cy=%2236.1%22 r=%222.03%22/%3E%3Ccircle cx=%2279.3%22 cy=%2237.9%22 r=%222.03%22/%3E%3Ccircle cx=%2278.3%22 cy=%2240.8%22 r=%222.03%22/%3E%3Ccircle cx=%2275.3%22 cy=%2240.8%22 r=%222.03%22/%3E%3Ccircle cx=%2274.3%22 cy=%2237.9%22 r=%222.03%22/%3E%3C/g%3E%3Ccircle class=%22lm-hole%22 cx=%2276.8%22 cy=%2238.7%22 r=%221.43%22/%3E%3Ccircle class=%22lm-dot%22 cx=%2276.8%22 cy=%2238.7%22 r=%220.83%22/%3E%3C/g%3E%3Cpath class=%22lm-gem%22 d=%22M60 0 L63 5 L60 10 L57 5 Z%22/%3E%3C/svg%3E" />
+  <meta name="theme-color" content="#A0455C" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Jost:wght@300..600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/portfolio.css" />
+</head>
+<body>
+
+  <!-- ============ PRELOADER (logo + text animation) ============ -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="pre-inner">
+      <svg class="pre-logo" viewBox="2 -1 116 118" aria-hidden="true"><path class="lm-veil" d="M60 10 C 28 10, 14 40, 14 72 C 14 94, 10 106, 4 116 L 116 116 C 110 106, 106 94, 106 72 C 106 40, 92 10, 60 10 Z"/><path class="lm-hair" d="M60 22 C 38 22, 30 42, 30 64 C 30 82, 28 96, 24 116 L 96 116 C 92 96, 90 82, 90 64 C 90 42, 82 22, 60 22 Z"/><path class="lm-face" d="M60 34 C 50 36, 44 44, 44 56 C 44 70, 51 80, 60 80 C 69 80, 76 70, 76 56 C 76 44, 70 36, 60 34 Z M53 79 L53 88 C 46 90, 40 98, 38 116 L 82 116 C 80 98, 74 90, 67 88 L 67 79 Z"/><path class="lm-part" d="M60 34 C 56 40, 50 44, 44 48 L 44 44 C 48 40, 54 35, 60 34 Z M60 34 C 64 40, 70 44, 76 48 L 76 44 C 72 40, 66 35, 60 34 Z"/><g class="lm-jewel"><path class="lm-neck" d="M53 89 C 56 95, 64 95, 67 89"/><circle cx="60" cy="97" r="2.2"/><path class="lm-chain" d="M60 35 L60 41"/><path d="M60 41 L62.6 44 L60 47 L57.4 44 Z"/></g><g class="lm-flower" style="--f:0"><g class="lm-petals"><circle cx="43.2" cy="36.1" r="2.03"/><circle cx="45.7" cy="37.9" r="2.03"/><circle cx="44.7" cy="40.8" r="2.03"/><circle cx="41.7" cy="40.8" r="2.03"/><circle cx="40.7" cy="37.9" r="2.03"/></g><circle class="lm-hole" cx="43.2" cy="38.7" r="1.43"/><circle class="lm-dot" cx="43.2" cy="38.7" r="0.83"/></g><g class="lm-flower" style="--f:1"><g class="lm-petals"><circle cx="48.8" cy="27.4" r="2.50"/><circle cx="51.8" cy="29.6" r="2.50"/><circle cx="50.7" cy="33.2" r="2.50"/><circle cx="46.9" cy="33.2" r="2.50"/><circle cx="45.8" cy="29.6" r="2.50"/></g><circle class="lm-hole" cx="48.8" cy="30.6" r="1.76"/><circle class="lm-dot" cx="48.8" cy="30.6" r="1.02"/></g><g class="lm-flower" style="--f:2"><g class="lm-petals"><circle cx="60.0" cy="21.8" r="3.28"/><circle cx="64.0" cy="24.7" r="3.28"/><circle cx="62.5" cy="29.4" r="3.28"/><circle cx="57.5" cy="29.4" r="3.28"/><circle cx="56.0" cy="24.7" r="3.28"/></g><circle class="lm-hole" cx="60.0" cy="26.0" r="2.31"/><circle class="lm-dot" cx="60.0" cy="26.0" r="1.34"/></g><g class="lm-flower" style="--f:3"><g class="lm-petals"><circle cx="71.2" cy="27.4" r="2.50"/><circle cx="74.2" cy="29.6" r="2.50"/><circle cx="73.1" cy="33.2" r="2.50"/><circle cx="69.3" cy="33.2" r="2.50"/><circle cx="68.2" cy="29.6" r="2.50"/></g><circle class="lm-hole" cx="71.2" cy="30.6" r="1.76"/><circle class="lm-dot" cx="71.2" cy="30.6" r="1.02"/></g><g class="lm-flower" style="--f:4"><g class="lm-petals"><circle cx="76.8" cy="36.1" r="2.03"/><circle cx="79.3" cy="37.9" r="2.03"/><circle cx="78.3" cy="40.8" r="2.03"/><circle cx="75.3" cy="40.8" r="2.03"/><circle cx="74.3" cy="37.9" r="2.03"/></g><circle class="lm-hole" cx="76.8" cy="38.7" r="1.43"/><circle class="lm-dot" cx="76.8" cy="38.7" r="0.83"/></g><path class="lm-gem" d="M60 0 L63 5 L60 10 L57 5 Z"/></svg>
+      <p class="pre-title brand-name" data-split>Blush &amp; Bloom</p>
+      <p class="pre-sub">Bridal Studio</p>
+    </div>
+  </div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo" aria-label="Blush &amp; Bloom home">
+        <svg class="logo-mark" viewBox="2 -1 116 118" aria-hidden="true"><path class="lm-veil" d="M60 10 C 28 10, 14 40, 14 72 C 14 94, 10 106, 4 116 L 116 116 C 110 106, 106 94, 106 72 C 106 40, 92 10, 60 10 Z"/><path class="lm-hair" d="M60 22 C 38 22, 30 42, 30 64 C 30 82, 28 96, 24 116 L 96 116 C 92 96, 90 82, 90 64 C 90 42, 82 22, 60 22 Z"/><path class="lm-face" d="M60 34 C 50 36, 44 44, 44 56 C 44 70, 51 80, 60 80 C 69 80, 76 70, 76 56 C 76 44, 70 36, 60 34 Z M53 79 L53 88 C 46 90, 40 98, 38 116 L 82 116 C 80 98, 74 90, 67 88 L 67 79 Z"/><path class="lm-part" d="M60 34 C 56 40, 50 44, 44 48 L 44 44 C 48 40, 54 35, 60 34 Z M60 34 C 64 40, 70 44, 76 48 L 76 44 C 72 40, 66 35, 60 34 Z"/><g class="lm-jewel"><path class="lm-neck" d="M53 89 C 56 95, 64 95, 67 89"/><circle cx="60" cy="97" r="2.2"/><path class="lm-chain" d="M60 35 L60 41"/><path d="M60 41 L62.6 44 L60 47 L57.4 44 Z"/></g><g class="lm-flower" style="--f:0"><g class="lm-petals"><circle cx="43.2" cy="36.1" r="2.03"/><circle cx="45.7" cy="37.9" r="2.03"/><circle cx="44.7" cy="40.8" r="2.03"/><circle cx="41.7" cy="40.8" r="2.03"/><circle cx="40.7" cy="37.9" r="2.03"/></g><circle class="lm-hole" cx="43.2" cy="38.7" r="1.43"/><circle class="lm-dot" cx="43.2" cy="38.7" r="0.83"/></g><g class="lm-flower" style="--f:1"><g class="lm-petals"><circle cx="48.8" cy="27.4" r="2.50"/><circle cx="51.8" cy="29.6" r="2.50"/><circle cx="50.7" cy="33.2" r="2.50"/><circle cx="46.9" cy="33.2" r="2.50"/><circle cx="45.8" cy="29.6" r="2.50"/></g><circle class="lm-hole" cx="48.8" cy="30.6" r="1.76"/><circle class="lm-dot" cx="48.8" cy="30.6" r="1.02"/></g><g class="lm-flower" style="--f:2"><g class="lm-petals"><circle cx="60.0" cy="21.8" r="3.28"/><circle cx="64.0" cy="24.7" r="3.28"/><circle cx="62.5" cy="29.4" r="3.28"/><circle cx="57.5" cy="29.4" r="3.28"/><circle cx="56.0" cy="24.7" r="3.28"/></g><circle class="lm-hole" cx="60.0" cy="26.0" r="2.31"/><circle class="lm-dot" cx="60.0" cy="26.0" r="1.34"/></g><g class="lm-flower" style="--f:3"><g class="lm-petals"><circle cx="71.2" cy="27.4" r="2.50"/><circle cx="74.2" cy="29.6" r="2.50"/><circle cx="73.1" cy="33.2" r="2.50"/><circle cx="69.3" cy="33.2" r="2.50"/><circle cx="68.2" cy="29.6" r="2.50"/></g><circle class="lm-hole" cx="71.2" cy="30.6" r="1.76"/><circle class="lm-dot" cx="71.2" cy="30.6" r="1.02"/></g><g class="lm-flower" style="--f:4"><g class="lm-petals"><circle cx="76.8" cy="36.1" r="2.03"/><circle cx="79.3" cy="37.9" r="2.03"/><circle cx="78.3" cy="40.8" r="2.03"/><circle cx="75.3" cy="40.8" r="2.03"/><circle cx="74.3" cy="37.9" r="2.03"/></g><circle class="lm-hole" cx="76.8" cy="38.7" r="1.43"/><circle class="lm-dot" cx="76.8" cy="38.7" r="0.83"/></g><path class="lm-gem" d="M60 0 L63 5 L60 10 L57 5 Z"/></svg>
+        <span class="logo-text">
+          <strong class="brand-name">Blush &amp; Bloom</strong>
+          <small>Bridal Studio</small>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li class="has-dropdown" id="homeDropdown">
+            <button class="nav-link dropdown-toggle" type="button" data-home
+                    aria-haspopup="true" aria-expanded="false" aria-controls="homeMenu">
+              Home <svg class="lucide lucide-chevron-down chev" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <ul class="dropdown" id="homeMenu">
+              <li><a href="index.html" class="dropdown-link"><svg class="lucide lucide-layout-template" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="7" x="3" y="3" rx="1"/><rect width="9" height="7" x="3" y="14" rx="1"/><rect width="5" height="7" x="16" y="14" rx="1"/></svg><span>Home 1</span><small>Classic</small></a></li>
+              <li><a href="home2.html" class="dropdown-link"><svg class="lucide lucide-layout-dashboard" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></svg><span>Home 2</span><small>Modern</small></a></li>
+            </ul>
+          </li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+        </ul>
+        <a class="btn btn-primary btn-book nav-book-mobile" href="login.html">
+          <svg class="lucide lucide-calendar-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h18V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7"/><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21.29 14.7a2.43 2.43 0 0 0-2.65-.52c-.3.12-.57.3-.8.53l-.34.34-.35-.34a2.43 2.43 0 0 0-2.65-.53c-.3.12-.56.3-.79.53-.95.94-1 2.53.2 3.74L17.5 22l3.6-3.55c1.2-1.21 1.14-2.8.19-3.74Z"/></svg><span>Book Now</span>
+        </a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark theme" title="Light / Dark">
+          <svg class="lucide lucide-moon i-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          <svg class="lucide lucide-sun i-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+        </button>
+        <button class="icon-btn dir-toggle" id="dirToggle" type="button" aria-label="Switch text direction" title="LTR / RTL">
+          <span class="dir-label">RTL</span>
+        </button>
+        <a class="btn btn-primary btn-book nav-book" href="login.html">
+          <svg class="lucide lucide-calendar-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h18V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7"/><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21.29 14.7a2.43 2.43 0 0 0-2.65-.52c-.3.12-.57.3-.8.53l-.34.34-.35-.34a2.43 2.43 0 0 0-2.65-.53c-.3.12-.56.3-.79.53-.95.94-1 2.53.2 3.74L17.5 22l3.6-3.55c1.2-1.21 1.14-2.8.19-3.74Z"/></svg><span>Book Now</span>
+        </a>
+        <button class="hamburger" id="hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+          <svg class="lucide lucide-menu i-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+          <svg class="lucide lucide-x i-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+
+  <main>
+    <!-- ============ HERO: background image + content overlay ============ -->
+    <section class="s-hero p-hero" aria-label="Our portfolio">
+      <div class="s-hero-bg" aria-hidden="true">
+        <span class="photo" style="--img:url('https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&amp;fit=crop&amp;w=1920&amp;q=80'); --ph:linear-gradient(160deg,#f2d3cd,#a0455c)"></span>
+      </div>
+
+      <div class="container s-hero-inner">
+        <div class="s-tag s-anim" style="--i:0">
+          <p class="eyebrow">Our Portfolio</p>
+          <div class="ornament" aria-hidden="true"><span class="o-line"></span><span class="o-diamond"></span><span class="o-line"></span></div>
+        </div>
+        <h1 class="s-hero-title s-anim" style="--i:1">Real brides, <em>real moments</em></h1>
+        <p class="s-hero-text s-anim" style="--i:2">A look through the ceremonies, receptions and quiet getting-ready moments we have been part of, one bride at a time.</p>
+        <div class="s-hero-cta s-anim" style="--i:3">
+          <a class="btn btn-primary btn-book" href="login.html"><svg class="lucide lucide-calendar-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h18V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7"/><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21.29 14.7a2.43 2.43 0 0 0-2.65-.52c-.3.12-.57.3-.8.53l-.34.34-.35-.34a2.43 2.43 0 0 0-2.65-.53c-.3.12-.56.3-.79.53-.95.94-1 2.53.2 3.74L17.5 22l3.6-3.55c1.2-1.21 1.14-2.8.19-3.74Z"/></svg><span>Book Your Look</span></a>
+          <button class="btn btn-outline" type="button" data-scroll-to=".p-gallery-section"><svg class="lucide lucide-layout-grid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg><span>View Gallery</span></button>
+        </div>
+      </div>
+
+      <button class="s-hero-scroll" type="button" data-scroll-to=".p-gallery-section" aria-label="Scroll to gallery">
+        <svg class="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+      </button>
+    </section>
+
+    <!-- ============ 1) GALLERY with filters (white) ============ -->
+    <section class="p-gallery-section section">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">The Gallery</p>
+          <h2 class="section-title">Looks we loved <em>creating</em></h2>
+          <div class="ornament" aria-hidden="true"><span class="o-line"></span><span class="o-diamond"></span><span class="o-line"></span></div>
+        </header>
+        <div class="p-filters reveal" role="toolbar" aria-label="Filter gallery">
+          <span class="p-filter-ink" aria-hidden="true"></span>
+          <button class="p-filter is-active" type="button" data-filter="all" aria-pressed="true">All<span class="p-filter-count">12</span></button><button class="p-filter" type="button" data-filter="bridal" aria-pressed="false">Bridal<span class="p-filter-count">4</span></button><button class="p-filter" type="button" data-filter="engagement" aria-pressed="false">Engagement<span class="p-filter-count">2</span></button><button class="p-filter" type="button" data-filter="reception" aria-pressed="false">Reception<span class="p-filter-count">2</span></button><button class="p-filter" type="button" data-filter="airbrush" aria-pressed="false">Airbrush<span class="p-filter-count">2</span></button><button class="p-filter" type="button" data-filter="hair" aria-pressed="false">Hair<span class="p-filter-count">2</span></button>
+        </div>
+        <div class="p-grid" data-gallery>
+          <button class="p-item p-tall reveal zoom" style="--d:0.00s" type="button" data-cat="bridal" data-full="https://images.unsplash.com/photo-1684868268327-7e5590bcfbd6?auto=format&amp;fit=crop&amp;w=1600&amp;q=80" data-caption="Soft glam for the pheras" aria-label="View larger: Soft glam for the pheras">
+            <span class="photo" style="--img:url('https://images.unsplash.com/photo-1684868268327-7e5590bcfbd6?auto=format&amp;fit=crop&amp;w=900&amp;q=80'); --ph:linear-gradient(160deg,#f6e2df,#c4587a)"></span>
+            <span class="p-item-tag">Bridal</span>
+            <span class="p-item-zoom"><svg class="lucide lucide-zoom-in" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg></span>
+            <span class="p-item-cap">Soft glam for the pheras</span>
+          </button>
+          <button class="p-item  reveal zoom" style="--d:0.08s" type="button" data-cat="bridal" data-full="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&amp;fit=crop&amp;w=1600&amp;q=80" data-caption="Transfer-proof bridal lip" aria-label="View larger: Transfer-proof bridal lip">
+            <span class="photo" style="--img:url('https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&amp;fit=crop&amp;w=600&amp;q=80'); --ph:linear-gradient(160deg,#f7eedf,#c9a96e)"></span>
+            <span class="p-item-tag">Bridal</span>
+            <span class="p-item-zoom"><svg class="lucide lucide-zoom-in" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg></span>
+            <span class="p-item-cap">Transfer-proof bridal lip</span>
+          </button>
+          <button class="p-item p-tall reveal zoom" style="--d:0.16s" type="button" data-cat="hair" data-full="https://images.unsplash.com/photo-1672788725446-c303ec2b318e?auto=format&amp;fit=crop&amp;w=1600&amp;q=80" data-caption="Final pinning before the ceremony" aria-label="View larger: Final pinning before the ceremony">
+            <span class="photo" style="--img:url('https://images.unsplash.com/photo-1672788725446-c303ec2b318e?auto=format&amp;fit=crop&amp;w=900&amp;q=80'); --ph:linear-gradient(160deg,#f2d3cd,#a0455c)"></span>
+            <span class="p-item-tag">Hair</span>
+            <span class="p-item-zoom"><svg class="lucide lucide-zoom-in" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg></span>
+            <span class="p-item-cap">Final pinning before the ceremony</span>
+          </button>
+          <button class="p-item p-wide reveal zoom" style="--d:0.24s" type="button" data-cat="bridal" data-full="https://images.unsplash.com/photo-1610047614301-13c63f00c032?auto=format&amp;fit=crop&amp;w=1600&amp;q=80" data-caption="Red and gold silk, Nivi drape" aria-label="View larger: Red and gold silk, Nivi drape">
+            <span class="photo" style="--img:url('https://images.unsplash.com/photo-1610047614301-13c63f00c032?auto=format&amp;fit=crop&amp;w=900&amp;q=80'); --ph:linear-gradient(160deg,#dcaaa3,#8a4a55)"></span>
+            <span class="p-item-tag">Bridal</span>
+            <span class="p-item-zoom"><svg class="lucide lucide-zoom-in" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg></span>
+            <span class="p-item-cap">Red and gold silk, Nivi drape</span>
+          </button>
+          <button class="p-item  reveal zoom" style="--d:0.00s" type="button" data-cat="airbrush" data-full="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&amp;fit=crop&amp;w=1600&amp;q=80" data-caption="Shades matched to the outfit" aria-label="View larger: Shades matched to the outfit">
+            <span class="photo" style="--img:url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&amp;fit=crop&amp;w=600&amp;q=80'); --ph:linear-gradient(160deg,#f6e2df,#c4587a)"></span>
+            <span class="p-item-tag">Airbrush</span>
+            <span class="p-item-zoom"><svg class="lucide lucide-zoom-in" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg></span>
+            <span class="p-item-cap">Shades matched to the outfit</span>
+          </button>
+          <button class="p-item p-wide reveal zoom" style="--d:0.08s" type="button" data-cat="reception" data-full="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&amp;fit=crop&amp;w=1600&amp;q=80" data-caption="The bridal party, ready together" aria-label="View larger: The bridal party, ready together">
+            <span class="photo" style="--img:url('https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&amp;fit=crop&amp;w=900&amp;q=80'); --ph:linear-gradient(160deg,#f7eedf,#c9a96e)"></span>
+            <span class="p-item-tag">Reception</span>
+            <span class="p-item-zoom"><svg class="lucide lucide-zoom-in" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg></span>
+            <span class="p-item-cap">The bridal party, ready together</span>
+          </button>
+          <button class="p-item  reveal zoom" style="--d:0.16s" type="button" data-cat="hair" data-full="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&amp;fit=crop&amp;w=1600&amp;q=80" data-caption="Soft waves for the reception" aria-label="View larger: Soft waves for the reception">
+            <span class="photo" style="--img:url('https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&amp;fit=crop&amp;w=600&amp;q=80'); --ph:linear-gradient(160deg,#f2d3cd,#a0455c)"></span>
+            <span class="p-item-tag">Hair</span>
+            <span class="p-item-zoom"><svg class="lucide lucide-zoom-in" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg></span>
+            <span class="p-item-cap">Soft waves for the reception</span>
+          </button>
+          <button class="p-item p-tall reveal zoom" style="--d:0.24s" type="button" data-cat="engagement" data-full="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&amp;fit=crop&amp;w=1600&amp;q=80" data-caption="Dewy engagement glow" aria-label="View larger: Dewy engagement glow">
+            <span class="photo" style="--img:url('https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&amp;fit=crop&amp;w=900&amp;q=80'); --ph:linear-gradient(160deg,#dcaaa3,#8a4a55)"></span>
+            <span class="p-item-tag">Engagement</span>
+            <span class="p-item-zoom"><svg class="lucide lucide-zoom-in" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg></span>
+            <span class="p-item-cap">Dewy engagement glow</span>
+          </button>
+          <button class="p-item p-tall reveal zoom" style="--d:0.00s" type="button" data-cat="reception" data-full="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&amp;fit=crop&amp;w=1600&amp;q=80" data-caption="Evening reception look" aria-label="View larger: Evening reception look">
+            <span class="photo" style="--img:url('https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&amp;fit=crop&amp;w=900&amp;q=80'); --ph:linear-gradient(160deg,#f6e2df,#c4587a)"></span>
+            <span class="p-item-tag">Reception</span>
+            <span class="p-item-zoom"><svg class="lucide lucide-zoom-in" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg></span>
+            <span class="p-item-cap">Evening reception look</span>
+          </button>
+          <button class="p-item  reveal zoom" style="--d:0.08s" type="button" data-cat="airbrush" data-full="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&amp;fit=crop&amp;w=1600&amp;q=80" data-caption="Airbrush base, built in fine layers" aria-label="View larger: Airbrush base, built in fine layers">
+            <span class="photo" style="--img:url('https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&amp;fit=crop&amp;w=600&amp;q=80'); --ph:linear-gradient(160deg,#f7eedf,#c9a96e)"></span>
+            <span class="p-item-tag">Airbrush</span>
+            <span class="p-item-zoom"><svg class="lucide lucide-zoom-in" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg></span>
+            <span class="p-item-cap">Airbrush base, built in fine layers</span>
+          </button>
+          <button class="p-item p-wide reveal zoom" style="--d:0.16s" type="button" data-cat="engagement" data-full="https://images.unsplash.com/photo-1610173827043-9db50e0d8ef9?auto=format&amp;fit=crop&amp;w=1600&amp;q=80" data-caption="Pastel engagement look" aria-label="View larger: Pastel engagement look">
+            <span class="photo" style="--img:url('https://images.unsplash.com/photo-1610173827043-9db50e0d8ef9?auto=format&amp;fit=crop&amp;w=900&amp;q=80'); --ph:linear-gradient(160deg,#f2d3cd,#a0455c)"></span>
+            <span class="p-item-tag">Engagement</span>
+            <span class="p-item-zoom"><svg class="lucide lucide-zoom-in" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg></span>
+            <span class="p-item-cap">Pastel engagement look</span>
+          </button>
+          <button class="p-item p-wide reveal zoom" style="--d:0.24s" type="button" data-cat="bridal" data-full="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&amp;fit=crop&amp;w=1600&amp;q=80" data-caption="Bridal jewellery set securely" aria-label="View larger: Bridal jewellery set securely">
+            <span class="photo" style="--img:url('https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&amp;fit=crop&amp;w=900&amp;q=80'); --ph:linear-gradient(160deg,#dcaaa3,#8a4a55)"></span>
+            <span class="p-item-tag">Bridal</span>
+            <span class="p-item-zoom"><svg class="lucide lucide-zoom-in" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg></span>
+            <span class="p-item-cap">Bridal jewellery set securely</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 2) BEFORE & AFTER (rose tint) ============ -->
+    <section class="p-ba-section section band-rose">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Before &amp; After</p>
+          <h2 class="section-title">The difference is in the <em>details</em></h2>
+          <div class="ornament" aria-hidden="true"><span class="o-line"></span><span class="o-diamond"></span><span class="o-line"></span></div>
+          <p class="section-sub">Choose a service to see the transformation.</p>
+        </header>
+
+        <div class="p-ba-tabs reveal" role="toolbar" aria-label="Choose a service to compare">
+          <button class="p-ba-tab is-active" type="button" data-img="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" data-note="Even, luminous skin, defined eyes and a long-wear lip that still looks like you." aria-pressed="true">
+            <span class="p-ba-tab-icon"><svg class="lucide lucide-brush" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9.06 11.9 8.07-8.06a2.85 2.85 0 1 1 4.03 4.03l-8.06 8.08"/><path d="M7.07 14.94c-1.66 0-3 1.35-3 3.02 0 1.33-2.5 1.52-2 2.02 1.08 1.1 2.49 2.02 4 2.02 2.2 0 4-1.8 4-4.04a3.01 3.01 0 0 0-3-3.02z"/></svg></span>
+            <span class="p-ba-tab-text"><strong>HD Bridal Makeup</strong><small>Skin, eyes &amp; lips</small></span>
+          </button>
+          <button class="p-ba-tab" type="button" data-img="https://images.unsplash.com/photo-1684868268327-7e5590bcfbd6?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" data-note="A micro-fine airbrush layer blurs texture and stays fresh through heat and tears." aria-pressed="false">
+            <span class="p-ba-tab-icon"><svg class="lucide lucide-sparkles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></svg></span>
+            <span class="p-ba-tab-text"><strong>Airbrush Finish</strong><small>Weightless base</small></span>
+          </button>
+          <button class="p-ba-tab" type="button" data-img="https://images.unsplash.com/photo-1672788725446-c303ec2b318e?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" data-note="Prepped for grip and volume, sculpted, pinned and finished with fresh flowers." aria-pressed="false">
+            <span class="p-ba-tab-icon"><svg class="lucide lucide-scissors" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="3"/><path d="M8.12 8.12 12 12"/><path d="M20 4 8.12 15.88"/><circle cx="6" cy="18" r="3"/><path d="M14.8 14.8 20 20"/></svg></span>
+            <span class="p-ba-tab-text"><strong>Bridal Hairstyling</strong><small>Volume &amp; florals</small></span>
+          </button>
+        </div>
+
+        <div class="p-ba-stage">
+          <div class="p-ba" data-ba dir="ltr">
+            <figure class="p-ba-img p-ba-before reveal from-left">
+              <span class="photo" style="--img:url('https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&amp;fit=crop&amp;w=1200&amp;q=80'); --ph:linear-gradient(160deg,#f7eedf,#c9a96e)" role="img" aria-label="Before"></span>
+              <figcaption class="p-ba-label">Before</figcaption>
+            </figure>
+            <figure class="p-ba-img p-ba-after reveal from-right">
+              <span class="photo" style="--img:url('https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&amp;fit=crop&amp;w=1200&amp;q=80'); --ph:linear-gradient(160deg,#f2d3cd,#a0455c)" role="img" aria-label="After"></span>
+              <figcaption class="p-ba-label">After</figcaption>
+            </figure>
+            <span class="p-ba-arrow" aria-hidden="true"><svg class="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+          </div>
+          <p class="p-ba-note" aria-live="polite"><span class="p-ba-note-icon"><svg class="lucide lucide-sparkles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></svg></span><span class="p-ba-note-text">Even, luminous skin, defined eyes and a long-wear lip that still looks like you.</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3) SIGNATURE LOOKS (white) ============ -->
+    <section class="p-looks section">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Signature Looks</p>
+          <h2 class="section-title">Three looks brides <em>ask for most</em></h2>
+          <div class="ornament" aria-hidden="true"><span class="o-line"></span><span class="o-diamond"></span><span class="o-line"></span></div>
+          <p class="section-sub">Every bride is different, but these are the styles we are asked to recreate again and again.</p>
+        </header>
+        <div class="p-looks-grid">
+          <article class="p-look reveal" style="--d:0.00s">
+            <div class="p-look-img">
+              <span class="photo" style="--img:url('https://images.unsplash.com/photo-1610047614301-13c63f00c032?auto=format&amp;fit=crop&amp;w=800&amp;q=80'); --ph:linear-gradient(160deg,#f7eedf,#c9a96e)" role="img" aria-label="The Classic Red Bride"></span>
+              <span class="p-look-no">01</span>
+              <span class="p-look-tag">Wedding ceremony</span>
+            </div>
+            <div class="p-look-body">
+              <h3>The Classic Red Bride</h3>
+              <p>Rich, warm and timeless, built to glow under ceremony lights and last through every ritual.</p>
+              <dl class="p-look-specs"><div><dt>Makeup</dt><dd>HD, bronze eyes, red lip</dd></div><div><dt>Hair</dt><dd>Jasmine bun with gajra</dd></div><div><dt>Drape</dt><dd>Nivi silk saree</dd></div></dl>
+              <a href="service-details1.html" class="link-arrow">Explore bridal makeup <svg class="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+            </div>
+          </article>
+          <article class="p-look reveal" style="--d:0.12s">
+            <div class="p-look-img">
+              <span class="photo" style="--img:url('https://images.unsplash.com/photo-1684868268327-7e5590bcfbd6?auto=format&amp;fit=crop&amp;w=800&amp;q=80'); --ph:linear-gradient(160deg,#f2d3cd,#a0455c)" role="img" aria-label="The Modern Minimalist"></span>
+              <span class="p-look-no">02</span>
+              <span class="p-look-tag">Reception</span>
+            </div>
+            <div class="p-look-body">
+              <h3>The Modern Minimalist</h3>
+              <p>Soft, skin-like glam and polished waves for an evening that is all about effortless elegance.</p>
+              <dl class="p-look-specs"><div><dt>Makeup</dt><dd>Airbrush, soft nude glam</dd></div><div><dt>Hair</dt><dd>Hollywood waves</dd></div><div><dt>Drape</dt><dd>Lehenga, net dupatta</dd></div></dl>
+              <a href="service-details2.html" class="link-arrow">Explore airbrush finish <svg class="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+            </div>
+          </article>
+          <article class="p-look reveal" style="--d:0.24s">
+            <div class="p-look-img">
+              <span class="photo" style="--img:url('https://images.unsplash.com/photo-1610173827043-9db50e0d8ef9?auto=format&amp;fit=crop&amp;w=800&amp;q=80'); --ph:linear-gradient(160deg,#dcaaa3,#8a4a55)" role="img" aria-label="The Pastel Engagement"></span>
+              <span class="p-look-no">03</span>
+              <span class="p-look-tag">Engagement</span>
+            </div>
+            <div class="p-look-body">
+              <h3>The Pastel Engagement</h3>
+              <p>Fresh, dewy and romantic, with florals in the hair and a light, luminous finish.</p>
+              <dl class="p-look-specs"><div><dt>Makeup</dt><dd>Dewy skin, rose-gold lids</dd></div><div><dt>Hair</dt><dd>Half-up braid, florals</dd></div><div><dt>Drape</dt><dd>Pre-pleated saree</dd></div></dl>
+              <a href="service-details3.html" class="link-arrow">Explore hairstyling <svg class="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4) NUMBERS + LOVE NOTES (rose tint) ============ -->
+    <section class="p-love section band-rose">
+      <div class="container">
+        <div class="p-stats">
+          <div class="p-stat reveal" style="--d:0.0s">
+            <span class="p-stat-icon"><svg class="lucide lucide-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></span>
+            <strong data-count="850" data-suffix="+">0+</strong>
+            <span>Brides styled</span>
+          </div>
+          <div class="p-stat reveal" style="--d:0.1s">
+            <span class="p-stat-icon"><svg class="lucide lucide-users" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+            <strong data-count="3000" data-suffix="+">0+</strong>
+            <span>Guests styled</span>
+          </div>
+          <div class="p-stat reveal" style="--d:0.2s">
+            <span class="p-stat-icon"><svg class="lucide lucide-sparkles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></svg></span>
+            <strong data-count="1200" data-suffix="+">0+</strong>
+            <span>Hairstyles created</span>
+          </div>
+          <div class="p-stat reveal" style="--d:0.3s">
+            <span class="p-stat-icon"><svg class="lucide lucide-gem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12l4 6-10 13L2 9Z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/></svg></span>
+            <strong data-count="15" data-suffix="+">0+</strong>
+            <span>Regional drape styles</span>
+          </div>
+        </div>
+
+        <div class="p-love-grid">
+          <div class="p-love-intro reveal from-left">
+            <div class="s-tag s-tag-start">
+              <p class="eyebrow">Love Notes</p>
+              <div class="ornament" aria-hidden="true"><span class="o-line"></span><span class="o-diamond"></span><span class="o-line"></span></div>
+            </div>
+            <h2 class="section-title">Words from our <em>brides</em></h2>
+            <p class="s-lead">Nothing means more to us than hearing how a bride felt on her day.</p>
+            <div class="p-quotes-nav">
+              <button class="p-nav-btn" type="button" data-step="-1" aria-label="Previous review"><svg class="lucide lucide-chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
+              <div class="p-dots"><button class="p-dot is-active" type="button" data-go="0" aria-label="Show review 1"></button><button class="p-dot" type="button" data-go="1" aria-label="Show review 2"></button><button class="p-dot" type="button" data-go="2" aria-label="Show review 3"></button><button class="p-dot" type="button" data-go="3" aria-label="Show review 4"></button></div>
+              <button class="p-nav-btn" type="button" data-step="1" aria-label="Next review"><svg class="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+            </div>
+          </div>
+          <!-- Placeholder reviews: replace the quote text, "Client Name" and "Wedding · City" with real client reviews before launch. -->
+          <div class="p-quotes reveal from-right" data-carousel aria-roledescription="carousel" aria-label="Client reviews">
+            <span class="p-quotes-mark" aria-hidden="true"><svg class="lucide lucide-quote" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/></svg></span>
+            <figure class="p-quote is-active" role="group" aria-roledescription="slide" aria-label="1 of 4">
+              <div class="t-stars" aria-label="5 out of 5 stars"><svg class="lucide lucide-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="lucide lucide-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="lucide lucide-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="lucide lucide-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="lucide lucide-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+              <blockquote><p>From the trial to the last dance, my makeup felt light and looked exactly like me, only better. Every photo came out beautifully.</p></blockquote>
+              <figcaption><span class="p-quote-avatar" aria-hidden="true"><svg class="lucide lucide-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></span><span><strong>Client Name</strong><small>Wedding · City</small></span></figcaption>
+            </figure>
+            <figure class="p-quote" role="group" aria-roledescription="slide" aria-label="2 of 4" aria-hidden="true">
+              <div class="t-stars" aria-label="5 out of 5 stars"><svg class="lucide lucide-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="lucide lucide-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="lucide lucide-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="lucide lucide-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="lucide lucide-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+              <blockquote><p>The team arrived early, kept everyone calm and had my mother, sisters and me ready on time. Our family photos look so coordinated.</p></blockquote>
+              <figcaption><span class="p-quote-avatar" aria-hidden="true"><svg class="lucide lucide-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></span><span><strong>Client Name</strong><small>Wedding · City</small></span></figcaption>
+            </figure>
+            <figure class="p-quote" role="group" aria-roledescription="slide" aria-label="3 of 4" aria-hidden="true">
+              <div class="t-stars" aria-label="5 out of 5 stars"><svg class="lucide lucide-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="lucide lucide-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="lucide lucide-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="lucide lucide-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="lucide lucide-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+              <blockquote><p>My bun held through the pheras, the dancing and the drive home. Not a single pin moved, and the jasmine smelled wonderful all night.</p></blockquote>
+              <figcaption><span class="p-quote-avatar" aria-hidden="true"><svg class="lucide lucide-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></span><span><strong>Client Name</strong><small>Wedding · City</small></span></figcaption>
+            </figure>
+            <figure class="p-quote" role="group" aria-roledescription="slide" aria-label="4 of 4" aria-hidden="true">
+              <div class="t-stars" aria-label="5 out of 5 stars"><svg class="lucide lucide-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="lucide lucide-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="lucide lucide-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="lucide lucide-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="lucide lucide-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+              <blockquote><p>They draped my mother's heirloom saree perfectly and set heavy jewellery so securely that I forgot I was wearing it.</p></blockquote>
+              <figcaption><span class="p-quote-avatar" aria-hidden="true"><svg class="lucide lucide-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></span><span><strong>Client Name</strong><small>Wedding · City</small></span></figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5) CTA BAND (deep rose) ============ -->
+    <section class="s-cta">
+      <div class="container s-cta-inner reveal zoom">
+        <div class="s-cta-copy">
+          <h2>Your look could be next</h2>
+          <p>Tell us about your ceremonies and your inspiration, and we will plan a look that feels completely you.</p>
+        </div>
+        <div class="s-cta-actions">
+          <a class="btn btn-light btn-book" href="login.html"><svg class="lucide lucide-calendar-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h18V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7"/><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21.29 14.7a2.43 2.43 0 0 0-2.65-.52c-.3.12-.57.3-.8.53l-.34.34-.35-.34a2.43 2.43 0 0 0-2.65-.53c-.3.12-.56.3-.79.53-.95.94-1 2.53.2 3.74L17.5 22l3.6-3.55c1.2-1.21 1.14-2.8.19-3.74Z"/></svg><span>Book Your Look</span></a>
+          <a href="tel:+919876543210" class="s-cta-phone"><svg class="lucide lucide-phone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+91 98765 43210</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER (rose tint) ============ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand reveal" style="--d:0s">
+        <a href="index.html" class="logo logo-footer">
+          <svg class="logo-mark" viewBox="2 -1 116 118" aria-hidden="true"><path class="lm-veil" d="M60 10 C 28 10, 14 40, 14 72 C 14 94, 10 106, 4 116 L 116 116 C 110 106, 106 94, 106 72 C 106 40, 92 10, 60 10 Z"/><path class="lm-hair" d="M60 22 C 38 22, 30 42, 30 64 C 30 82, 28 96, 24 116 L 96 116 C 92 96, 90 82, 90 64 C 90 42, 82 22, 60 22 Z"/><path class="lm-face" d="M60 34 C 50 36, 44 44, 44 56 C 44 70, 51 80, 60 80 C 69 80, 76 70, 76 56 C 76 44, 70 36, 60 34 Z M53 79 L53 88 C 46 90, 40 98, 38 116 L 82 116 C 80 98, 74 90, 67 88 L 67 79 Z"/><path class="lm-part" d="M60 34 C 56 40, 50 44, 44 48 L 44 44 C 48 40, 54 35, 60 34 Z M60 34 C 64 40, 70 44, 76 48 L 76 44 C 72 40, 66 35, 60 34 Z"/><g class="lm-jewel"><path class="lm-neck" d="M53 89 C 56 95, 64 95, 67 89"/><circle cx="60" cy="97" r="2.2"/><path class="lm-chain" d="M60 35 L60 41"/><path d="M60 41 L62.6 44 L60 47 L57.4 44 Z"/></g><g class="lm-flower" style="--f:0"><g class="lm-petals"><circle cx="43.2" cy="36.1" r="2.03"/><circle cx="45.7" cy="37.9" r="2.03"/><circle cx="44.7" cy="40.8" r="2.03"/><circle cx="41.7" cy="40.8" r="2.03"/><circle cx="40.7" cy="37.9" r="2.03"/></g><circle class="lm-hole" cx="43.2" cy="38.7" r="1.43"/><circle class="lm-dot" cx="43.2" cy="38.7" r="0.83"/></g><g class="lm-flower" style="--f:1"><g class="lm-petals"><circle cx="48.8" cy="27.4" r="2.50"/><circle cx="51.8" cy="29.6" r="2.50"/><circle cx="50.7" cy="33.2" r="2.50"/><circle cx="46.9" cy="33.2" r="2.50"/><circle cx="45.8" cy="29.6" r="2.50"/></g><circle class="lm-hole" cx="48.8" cy="30.6" r="1.76"/><circle class="lm-dot" cx="48.8" cy="30.6" r="1.02"/></g><g class="lm-flower" style="--f:2"><g class="lm-petals"><circle cx="60.0" cy="21.8" r="3.28"/><circle cx="64.0" cy="24.7" r="3.28"/><circle cx="62.5" cy="29.4" r="3.28"/><circle cx="57.5" cy="29.4" r="3.28"/><circle cx="56.0" cy="24.7" r="3.28"/></g><circle class="lm-hole" cx="60.0" cy="26.0" r="2.31"/><circle class="lm-dot" cx="60.0" cy="26.0" r="1.34"/></g><g class="lm-flower" style="--f:3"><g class="lm-petals"><circle cx="71.2" cy="27.4" r="2.50"/><circle cx="74.2" cy="29.6" r="2.50"/><circle cx="73.1" cy="33.2" r="2.50"/><circle cx="69.3" cy="33.2" r="2.50"/><circle cx="68.2" cy="29.6" r="2.50"/></g><circle class="lm-hole" cx="71.2" cy="30.6" r="1.76"/><circle class="lm-dot" cx="71.2" cy="30.6" r="1.02"/></g><g class="lm-flower" style="--f:4"><g class="lm-petals"><circle cx="76.8" cy="36.1" r="2.03"/><circle cx="79.3" cy="37.9" r="2.03"/><circle cx="78.3" cy="40.8" r="2.03"/><circle cx="75.3" cy="40.8" r="2.03"/><circle cx="74.3" cy="37.9" r="2.03"/></g><circle class="lm-hole" cx="76.8" cy="38.7" r="1.43"/><circle class="lm-dot" cx="76.8" cy="38.7" r="0.83"/></g><path class="lm-gem" d="M60 0 L63 5 L60 10 L57 5 Z"/></svg>
+          <span class="logo-text"><strong class="brand-name">Blush &amp; Bloom</strong><small>Bridal Studio</small></span>
+        </a>
+        <p>Timeless bridal makeup and wedding styling for the moments you will remember forever.</p>
+        <!-- Social links: replace the URLs with the studio's own profiles -->
+        <ul class="footer-social" aria-label="Follow Blush &amp; Bloom">
+          <li style="--s:0"><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg class="lucide lucide-instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a></li>
+          <li style="--s:1"><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><svg class="lucide lucide-facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a></li>
+          <li style="--s:2"><a href="https://www.pinterest.com/" target="_blank" rel="noopener" aria-label="Pinterest" title="Pinterest"><svg class="lucide lucide-pinterest" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M10.8 21.6 13.1 12"/><path d="M9.4 14.6c-.9-.8-1.4-2-1.1-3.4.4-2.1 2.3-3.5 4.4-3.3 2.2.2 3.7 2 3.4 4.2-.2 1.9-1.4 3.4-2.9 3.4-1.1 0-1.8-.9-1.5-1.9l.6-2.4"/></svg></a></li>
+          <li style="--s:3"><a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><svg class="lucide lucide-youtube" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg></a></li>
+          <li style="--s:4"><a href="https://wa.me/919876543210" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp"><svg class="lucide lucide-whatsapp" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/><path d="M9.2 8.6c-.3 2.9 3.3 6.5 6.2 6.2l.8-1.3-1.7-1-.9.6c-1-.4-2.1-1.5-2.5-2.5l.6-.9-1-1.7Z"/></svg></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col reveal" style="--d:.1s">
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col reveal" style="--d:.2s">
+        <h4>Contact</h4>
+        <ul class="footer-links footer-contact">
+          <li><svg class="lucide lucide-map-pin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg><span class="footer-address">Plot 24, Road No. 36, Jubilee Hills, Hyderabad, Telangana 500033</span></li>
+          <li><svg class="lucide lucide-smartphone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg><a href="tel:+919876543210" dir="ltr">+91 98765 43210</a></li>
+          <li><svg class="lucide lucide-mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><a href="mailto:hello@blushandbloom.in">hello@blushandbloom.in</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col reveal" style="--d:.3s">
+        <h4>Hours</h4>
+        <ul class="footer-links footer-contact">
+          <li><svg class="lucide lucide-clock" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>Mon – Sat: 10am – 8pm</span></li>
+          <li><svg class="lucide lucide-calendar-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h18V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7"/><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21.29 14.7a2.43 2.43 0 0 0-2.65-.52c-.3.12-.57.3-.8.53l-.34.34-.35-.34a2.43 2.43 0 0 0-2.65-.53c-.3.12-.56.3-.79.53-.95.94-1 2.53.2 3.74L17.5 22l3.6-3.55c1.2-1.21 1.14-2.8.19-3.74Z"/></svg><span>Sunday: By appointment</span></li>
+          <li><svg class="lucide lucide-sparkles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></svg><span>Wedding days: From 4am</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <div class="footer-bottom-inner">
+        <p>© <span id="year"></span> <span class="brand-name">Blush &amp; Bloom</span> Bridal Studio. All rights reserved.</p>
+        <ul class="footer-legal">
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top">
+    <svg class="lucide lucide-arrow-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg>
+  </button>
+
+  <!-- ============ GALLERY LIGHTBOX ============ -->
+  <dialog class="lightbox" id="lightbox" aria-label="Image viewer">
+    <figure class="lb-figure">
+      <img class="lb-img" id="lbImg" src="" alt="" />
+      <figcaption class="lb-caption"><span class="lb-count" id="lbCount"></span><span id="lbCaption"></span></figcaption>
+      <button class="lb-btn lb-prev" type="button" data-lb="prev" aria-label="Previous image"><svg class="lucide lucide-chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
+      <button class="lb-btn lb-next" type="button" data-lb="next" aria-label="Next image"><svg class="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+      <button class="lb-btn lb-close" type="button" data-lb="close" aria-label="Close"><svg class="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>
+    </figure>
+  </dialog>
+
+  <script src="js/portfolio.js" defer></script>
+</body>
+</html>

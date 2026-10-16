@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | Blush &amp; Bloom Bridal Studio</title>
+  <meta name="description" content="Your Blush &amp; Bloom bridal dashboard: book trial and event-day sessions, choose look references and track payment instalments." />
+
+  <!-- Apply saved theme / direction before paint (prevents flash) -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('bb-theme');
+        var d = localStorage.getItem('bb-dir');
+        if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', t);
+        if (d) document.documentElement.setAttribute('dir', d);
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- Favicon: floral-silhouette bride (inline SVG, no extra file) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%222 -1 116 118%22%3E%3Cstyle%3E.lm-veil%7Bfill:%23C9A35F%7D.lm-hair,.lm-part,.lm-hole%7Bfill:%23A0455C%7D.lm-face,.lm-petals%7Bfill:%23fff%7D.lm-jewel,.lm-dot,.lm-gem%7Bfill:%23C9A35F%7D.lm-neck,.lm-chain%7Bfill:none;stroke:%23C9A35F;stroke-width:2.4;stroke-linecap:round%7D%3C/style%3E%3Cpath class=%22lm-veil%22 d=%22M60 10 C 28 10, 14 40, 14 72 C 14 94, 10 106, 4 116 L 116 116 C 110 106, 106 94, 106 72 C 106 40, 92 10, 60 10 Z%22/%3E%3Cpath class=%22lm-hair%22 d=%22M60 22 C 38 22, 30 42, 30 64 C 30 82, 28 96, 24 116 L 96 116 C 92 96, 90 82, 90 64 C 90 42, 82 22, 60 22 Z%22/%3E%3Cpath class=%22lm-face%22 d=%22M60 34 C 50 36, 44 44, 44 56 C 44 70, 51 80, 60 80 C 69 80, 76 70, 76 56 C 76 44, 70 36, 60 34 Z M53 79 L53 88 C 46 90, 40 98, 38 116 L 82 116 C 80 98, 74 90, 67 88 L 67 79 Z%22/%3E%3Cpath class=%22lm-part%22 d=%22M60 34 C 56 40, 50 44, 44 48 L 44 44 C 48 40, 54 35, 60 34 Z M60 34 C 64 40, 70 44, 76 48 L 76 44 C 72 40, 66 35, 60 34 Z%22/%3E%3Cg class=%22lm-jewel%22%3E%3Cpath class=%22lm-neck%22 d=%22M53 89 C 56 95, 64 95, 67 89%22/%3E%3Ccircle cx=%2260%22 cy=%2297%22 r=%222.2%22/%3E%3Cpath class=%22lm-chain%22 d=%22M60 35 L60 41%22/%3E%3Cpath d=%22M60 41 L62.6 44 L60 47 L57.4 44 Z%22/%3E%3C/g%3E%3Cg class=%22lm-flower%22 style=%22--f:0%22%3E%3Cg class=%22lm-petals%22%3E%3Ccircle cx=%2243.2%22 cy=%2236.1%22 r=%222.03%22/%3E%3Ccircle cx=%2245.7%22 cy=%2237.9%22 r=%222.03%22/%3E%3Ccircle cx=%2244.7%22 cy=%2240.8%22 r=%222.03%22/%3E%3Ccircle cx=%2241.7%22 cy=%2240.8%22 r=%222.03%22/%3E%3Ccircle cx=%2240.7%22 cy=%2237.9%22 r=%222.03%22/%3E%3C/g%3E%3Ccircle class=%22lm-hole%22 cx=%2243.2%22 cy=%2238.7%22 r=%221.43%22/%3E%3Ccircle class=%22lm-dot%22 cx=%2243.2%22 cy=%2238.7%22 r=%220.83%22/%3E%3C/g%3E%3Cg class=%22lm-flower%22 style=%22--f:1%22%3E%3Cg class=%22lm-petals%22%3E%3Ccircle cx=%2248.8%22 cy=%2227.4%22 r=%222.50%22/%3E%3Ccircle cx=%2251.8%22 cy=%2229.6%22 r=%222.50%22/%3E%3Ccircle cx=%2250.7%22 cy=%2233.2%22 r=%222.50%22/%3E%3Ccircle cx=%2246.9%22 cy=%2233.2%22 r=%222.50%22/%3E%3Ccircle cx=%2245.8%22 cy=%2229.6%22 r=%222.50%22/%3E%3C/g%3E%3Ccircle class=%22lm-hole%22 cx=%2248.8%22 cy=%2230.6%22 r=%221.76%22/%3E%3Ccircle class=%22lm-dot%22 cx=%2248.8%22 cy=%2230.6%22 r=%221.02%22/%3E%3C/g%3E%3Cg class=%22lm-flower%22 style=%22--f:2%22%3E%3Cg class=%22lm-petals%22%3E%3Ccircle cx=%2260.0%22 cy=%2221.8%22 r=%223.28%22/%3E%3Ccircle cx=%2264.0%22 cy=%2224.7%22 r=%223.28%22/%3E%3Ccircle cx=%2262.5%22 cy=%2229.4%22 r=%223.28%22/%3E%3Ccircle cx=%2257.5%22 cy=%2229.4%22 r=%223.28%22/%3E%3Ccircle cx=%2256.0%22 cy=%2224.7%22 r=%223.28%22/%3E%3C/g%3E%3Ccircle class=%22lm-hole%22 cx=%2260.0%22 cy=%2226.0%22 r=%222.31%22/%3E%3Ccircle class=%22lm-dot%22 cx=%2260.0%22 cy=%2226.0%22 r=%221.34%22/%3E%3C/g%3E%3Cg class=%22lm-flower%22 style=%22--f:3%22%3E%3Cg class=%22lm-petals%22%3E%3Ccircle cx=%2271.2%22 cy=%2227.4%22 r=%222.50%22/%3E%3Ccircle cx=%2274.2%22 cy=%2229.6%22 r=%222.50%22/%3E%3Ccircle cx=%2273.1%22 cy=%2233.2%22 r=%222.50%22/%3E%3Ccircle cx=%2269.3%22 cy=%2233.2%22 r=%222.50%22/%3E%3Ccircle cx=%2268.2%22 cy=%2229.6%22 r=%222.50%22/%3E%3C/g%3E%3Ccircle class=%22lm-hole%22 cx=%2271.2%22 cy=%2230.6%22 r=%221.76%22/%3E%3Ccircle class=%22lm-dot%22 cx=%2271.2%22 cy=%2230.6%22 r=%221.02%22/%3E%3C/g%3E%3Cg class=%22lm-flower%22 style=%22--f:4%22%3E%3Cg class=%22lm-petals%22%3E%3Ccircle cx=%2276.8%22 cy=%2236.1%22 r=%222.03%22/%3E%3Ccircle cx=%2279.3%22 cy=%2237.9%22 r=%222.03%22/%3E%3Ccircle cx=%2278.3%22 cy=%2240.8%22 r=%222.03%22/%3E%3Ccircle cx=%2275.3%22 cy=%2240.8%22 r=%222.03%22/%3E%3Ccircle cx=%2274.3%22 cy=%2237.9%22 r=%222.03%22/%3E%3C/g%3E%3Ccircle class=%22lm-hole%22 cx=%2276.8%22 cy=%2238.7%22 r=%221.43%22/%3E%3Ccircle class=%22lm-dot%22 cx=%2276.8%22 cy=%2238.7%22 r=%220.83%22/%3E%3C/g%3E%3Cpath class=%22lm-gem%22 d=%22M60 0 L63 5 L60 10 L57 5 Z%22/%3E%3C/svg%3E" />
+  <meta name="theme-color" content="#A0455C" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Jost:wght@300..600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/dashboard.css" />
+</head>
+<body class="app-body">
+
+  <!-- ============ PRELOADER (logo + text animation) ============ -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="pre-inner">
+      <svg class="pre-logo" viewBox="2 -1 116 118" aria-hidden="true"><path class="lm-veil" d="M60 10 C 28 10, 14 40, 14 72 C 14 94, 10 106, 4 116 L 116 116 C 110 106, 106 94, 106 72 C 106 40, 92 10, 60 10 Z"/><path class="lm-hair" d="M60 22 C 38 22, 30 42, 30 64 C 30 82, 28 96, 24 116 L 96 116 C 92 96, 90 82, 90 64 C 90 42, 82 22, 60 22 Z"/><path class="lm-face" d="M60 34 C 50 36, 44 44, 44 56 C 44 70, 51 80, 60 80 C 69 80, 76 70, 76 56 C 76 44, 70 36, 60 34 Z M53 79 L53 88 C 46 90, 40 98, 38 116 L 82 116 C 80 98, 74 90, 67 88 L 67 79 Z"/><path class="lm-part" d="M60 34 C 56 40, 50 44, 44 48 L 44 44 C 48 40, 54 35, 60 34 Z M60 34 C 64 40, 70 44, 76 48 L 76 44 C 72 40, 66 35, 60 34 Z"/><g class="lm-jewel"><path class="lm-neck" d="M53 89 C 56 95, 64 95, 67 89"/><circle cx="60" cy="97" r="2.2"/><path class="lm-chain" d="M60 35 L60 41"/><path d="M60 41 L62.6 44 L60 47 L57.4 44 Z"/></g><g class="lm-flower" style="--f:0"><g class="lm-petals"><circle cx="43.2" cy="36.1" r="2.03"/><circle cx="45.7" cy="37.9" r="2.03"/><circle cx="44.7" cy="40.8" r="2.03"/><circle cx="41.7" cy="40.8" r="2.03"/><circle cx="40.7" cy="37.9" r="2.03"/></g><circle class="lm-hole" cx="43.2" cy="38.7" r="1.43"/><circle class="lm-dot" cx="43.2" cy="38.7" r="0.83"/></g><g class="lm-flower" style="--f:1"><g class="lm-petals"><circle cx="48.8" cy="27.4" r="2.50"/><circle cx="51.8" cy="29.6" r="2.50"/><circle cx="50.7" cy="33.2" r="2.50"/><circle cx="46.9" cy="33.2" r="2.50"/><circle cx="45.8" cy="29.6" r="2.50"/></g><circle class="lm-hole" cx="48.8" cy="30.6" r="1.76"/><circle class="lm-dot" cx="48.8" cy="30.6" r="1.02"/></g><g class="lm-flower" style="--f:2"><g class="lm-petals"><circle cx="60.0" cy="21.8" r="3.28"/><circle cx="64.0" cy="24.7" r="3.28"/><circle cx="62.5" cy="29.4" r="3.28"/><circle cx="57.5" cy="29.4" r="3.28"/><circle cx="56.0" cy="24.7" r="3.28"/></g><circle class="lm-hole" cx="60.0" cy="26.0" r="2.31"/><circle class="lm-dot" cx="60.0" cy="26.0" r="1.34"/></g><g class="lm-flower" style="--f:3"><g class="lm-petals"><circle cx="71.2" cy="27.4" r="2.50"/><circle cx="74.2" cy="29.6" r="2.50"/><circle cx="73.1" cy="33.2" r="2.50"/><circle cx="69.3" cy="33.2" r="2.50"/><circle cx="68.2" cy="29.6" r="2.50"/></g><circle class="lm-hole" cx="71.2" cy="30.6" r="1.76"/><circle class="lm-dot" cx="71.2" cy="30.6" r="1.02"/></g><g class="lm-flower" style="--f:4"><g class="lm-petals"><circle cx="76.8" cy="36.1" r="2.03"/><circle cx="79.3" cy="37.9" r="2.03"/><circle cx="78.3" cy="40.8" r="2.03"/><circle cx="75.3" cy="40.8" r="2.03"/><circle cx="74.3" cy="37.9" r="2.03"/></g><circle class="lm-hole" cx="76.8" cy="38.7" r="1.43"/><circle class="lm-dot" cx="76.8" cy="38.7" r="0.83"/></g><path class="lm-gem" d="M60 0 L63 5 L60 10 L57 5 Z"/></svg>
+      <p class="pre-title brand-name" data-split>Blush &amp; Bloom</p>
+      <p class="pre-sub">Bridal Studio</p>
+    </div>
+  </div>
+
+
+  <!-- ============ SIDE NAV ============ -->
+  <aside class="sn" id="sidenav" aria-label="Dashboard navigation">
+    <div class="sn-top">
+      <a href="index.html" class="logo sn-logo" aria-label="Blush &amp; Bloom home">
+        <svg class="logo-mark" viewBox="2 -1 116 118" aria-hidden="true"><path class="lm-veil" d="M60 10 C 28 10, 14 40, 14 72 C 14 94, 10 106, 4 116 L 116 116 C 110 106, 106 94, 106 72 C 106 40, 92 10, 60 10 Z"/><path class="lm-hair" d="M60 22 C 38 22, 30 42, 30 64 C 30 82, 28 96, 24 116 L 96 116 C 92 96, 90 82, 90 64 C 90 42, 82 22, 60 22 Z"/><path class="lm-face" d="M60 34 C 50 36, 44 44, 44 56 C 44 70, 51 80, 60 80 C 69 80, 76 70, 76 56 C 76 44, 70 36, 60 34 Z M53 79 L53 88 C 46 90, 40 98, 38 116 L 82 116 C 80 98, 74 90, 67 88 L 67 79 Z"/><path class="lm-part" d="M60 34 C 56 40, 50 44, 44 48 L 44 44 C 48 40, 54 35, 60 34 Z M60 34 C 64 40, 70 44, 76 48 L 76 44 C 72 40, 66 35, 60 34 Z"/><g class="lm-jewel"><path class="lm-neck" d="M53 89 C 56 95, 64 95, 67 89"/><circle cx="60" cy="97" r="2.2"/><path class="lm-chain" d="M60 35 L60 41"/><path d="M60 41 L62.6 44 L60 47 L57.4 44 Z"/></g><g class="lm-flower" style="--f:0"><g class="lm-petals"><circle cx="43.2" cy="36.1" r="2.03"/><circle cx="45.7" cy="37.9" r="2.03"/><circle cx="44.7" cy="40.8" r="2.03"/><circle cx="41.7" cy="40.8" r="2.03"/><circle cx="40.7" cy="37.9" r="2.03"/></g><circle class="lm-hole" cx="43.2" cy="38.7" r="1.43"/><circle class="lm-dot" cx="43.2" cy="38.7" r="0.83"/></g><g class="lm-flower" style="--f:1"><g class="lm-petals"><circle cx="48.8" cy="27.4" r="2.50"/><circle cx="51.8" cy="29.6" r="2.50"/><circle cx="50.7" cy="33.2" r="2.50"/><circle cx="46.9" cy="33.2" r="2.50"/><circle cx="45.8" cy="29.6" r="2.50"/></g><circle class="lm-hole" cx="48.8" cy="30.6" r="1.76"/><circle class="lm-dot" cx="48.8" cy="30.6" r="1.02"/></g><g class="lm-flower" style="--f:2"><g class="lm-petals"><circle cx="60.0" cy="21.8" r="3.28"/><circle cx="64.0" cy="24.7" r="3.28"/><circle cx="62.5" cy="29.4" r="3.28"/><circle cx="57.5" cy="29.4" r="3.28"/><circle cx="56.0" cy="24.7" r="3.28"/></g><circle class="lm-hole" cx="60.0" cy="26.0" r="2.31"/><circle class="lm-dot" cx="60.0" cy="26.0" r="1.34"/></g><g class="lm-flower" style="--f:3"><g class="lm-petals"><circle cx="71.2" cy="27.4" r="2.50"/><circle cx="74.2" cy="29.6" r="2.50"/><circle cx="73.1" cy="33.2" r="2.50"/><circle cx="69.3" cy="33.2" r="2.50"/><circle cx="68.2" cy="29.6" r="2.50"/></g><circle class="lm-hole" cx="71.2" cy="30.6" r="1.76"/><circle class="lm-dot" cx="71.2" cy="30.6" r="1.02"/></g><g class="lm-flower" style="--f:4"><g class="lm-petals"><circle cx="76.8" cy="36.1" r="2.03"/><circle cx="79.3" cy="37.9" r="2.03"/><circle cx="78.3" cy="40.8" r="2.03"/><circle cx="75.3" cy="40.8" r="2.03"/><circle cx="74.3" cy="37.9" r="2.03"/></g><circle class="lm-hole" cx="76.8" cy="38.7" r="1.43"/><circle class="lm-dot" cx="76.8" cy="38.7" r="0.83"/></g><path class="lm-gem" d="M60 0 L63 5 L60 10 L57 5 Z"/></svg>
+        <span class="logo-text">
+          <strong class="brand-name">Blush &amp; Bloom</strong>
+          <small>Bridal Studio</small>
+        </span>
+      </a>
+      <button class="icon-btn sn-close" id="snClose" type="button" aria-label="Close menu"><svg class="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>
+    </div>
+
+
+    <p class="sn-label">Dashboard</p>
+    <nav class="db-nav" aria-label="Dashboard sections">
+      <a href="#overview" class="db-nav-link is-active"><svg class="lucide lucide-layout-dashboard" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></svg><span>Overview</span></a>
+      <a href="#sessions" class="db-nav-link"><svg class="lucide lucide-calendar-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h18V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7"/><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21.29 14.7a2.43 2.43 0 0 0-2.65-.52c-.3.12-.57.3-.8.53l-.34.34-.35-.34a2.43 2.43 0 0 0-2.65-.53c-.3.12-.56.3-.79.53-.95.94-1 2.53.2 3.74L17.5 22l3.6-3.55c1.2-1.21 1.14-2.8.19-3.74Z"/></svg><span>Sessions</span><em class="db-nav-badge" data-badge="sessions">0</em></a>
+      <a href="#looks" class="db-nav-link"><svg class="lucide lucide-images" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 22H4a2 2 0 0 1-2-2V6"/><path d="m22 13-1.296-1.296a2.41 2.41 0 0 0-3.408 0L11 18"/><circle cx="12" cy="8" r="2"/><rect width="16" height="16" x="6" y="2" rx="2"/></svg><span>Look References</span><em class="db-nav-badge" data-badge="looks">0</em></a>
+      <a href="#payments" class="db-nav-link"><svg class="lucide lucide-wallet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/></svg><span>Payments</span><em class="db-nav-badge db-nav-badge-alert" data-badge="payments" hidden>!</em></a>
+    </nav>
+
+    <p class="sn-label">Studio</p>
+    <nav class="sn-links" aria-label="Studio website">
+      <a href="index.html" class="sn-link"><svg class="lucide lucide-globe" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg><span>Visit Website</span></a>
+      <a href="services.html" class="sn-link"><svg class="lucide lucide-sparkles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></svg><span>Our Services</span></a>
+      <a href="contact.html" class="sn-link"><svg class="lucide lucide-message-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg><span>Contact Studio</span></a>
+    </nav>
+
+    <div class="sn-bottom">
+      <button class="db-reset" type="button" id="resetDemo"><svg class="lucide lucide-rotate-ccw" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>Reset demo data</button>
+      <div class="sn-account">
+        <p class="sn-user" id="snUser" hidden>Signed in as <strong></strong></p>
+        <button class="sn-btn" type="button" id="loginBtn"><svg class="lucide lucide-log-in i-in" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" x2="3" y1="12" y2="12"/></svg><svg class="lucide lucide-log-out i-out" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" x2="9" y1="12" y2="12"/></svg><span>Log In</span></button>
+      </div>
+    </div>
+  </aside>
+  <div class="sn-overlay" id="snOverlay" aria-hidden="true"></div>
+
+  <div class="app">
+    <!-- ============ TOP BAR: title (left) · days chip, RTL, theme, avatar (right) ============ -->
+    <header class="topbar" id="topbar">
+      <div class="topbar-inner">
+      <button class="icon-btn sn-open" id="snOpen" type="button" aria-label="Open menu" aria-controls="sidenav" aria-expanded="false"><svg class="lucide lucide-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg></button>
+      <div class="topbar-title">
+        <p class="eyebrow">Bridal Dashboard</p>
+        <h1>Welcome back, <em>beautiful</em></h1>
+      </div>
+      <div class="topbar-actions">
+        <span class="topbar-days"><svg class="lucide lucide-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg><strong id="topDays">0</strong><span>days to go</span></span>
+        <button class="icon-btn dir-toggle" id="dirToggle" type="button" aria-label="Switch text direction" title="LTR / RTL">
+          <span class="dir-label">RTL</span>
+        </button>
+        <button class="icon-btn theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark theme" title="Light / Dark">
+          <svg class="lucide lucide-moon i-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          <svg class="lucide lucide-sun i-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+        </button>
+        <span class="topbar-avatar" id="topAvatar" title="Not signed in" aria-hidden="true"><svg class="lucide lucide-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></span>
+      </div>
+      </div>
+    </header>
+
+    <!-- Demo data: sessions, look picks and payments are saved in this browser only. Connect to your booking system / payment gateway before launch. -->
+    <main class="app-main" id="main">
+      <div class="db-main">
+          <!-- ===== Overview ===== -->
+          <section class="db-panel db-overview reveal" id="overview" aria-labelledby="ovTitle">
+            <header class="db-panel-head">
+              <div><p class="eyebrow">Overview</p><h2 id="ovTitle">Your wedding at a glance</h2></div>
+            </header>
+          <!-- ===== Welcome card + wedding countdown ===== -->
+          <div class="db-welcome">
+            <span class="photo" style="--img:url('https://images.unsplash.com/photo-1684868268327-7e5590bcfbd6?auto=format&amp;fit=crop&amp;w=1400&amp;q=80'); --ph:linear-gradient(160deg,#f2d3cd,#a0455c)"></span>
+            <div class="db-welcome-copy">
+              <p class="eyebrow">Counting down to</p>
+              <h2>14 February 2027</h2>
+              <p>Everything for your big day, from trials to final touches, in one place.</p>
+            </div>
+            <div class="db-countdown" data-wedding="2027-02-14T06:00:00+05:30" aria-live="polite">
+              <div><strong data-cd="days">000</strong><span>Days</span></div>
+              <div><strong data-cd="hours">00</strong><span>Hours</span></div>
+              <div><strong data-cd="mins">00</strong><span>Mins</span></div>
+              <div><strong data-cd="secs">00</strong><span>Secs</span></div>
+            </div>
+          </div>
+            <div class="db-stats">
+              <div class="db-stat"><span class="db-stat-icon"><svg class="lucide lucide-calendar-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h18V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7"/><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21.29 14.7a2.43 2.43 0 0 0-2.65-.52c-.3.12-.57.3-.8.53l-.34.34-.35-.34a2.43 2.43 0 0 0-2.65-.53c-.3.12-.56.3-.79.53-.95.94-1 2.53.2 3.74L17.5 22l3.6-3.55c1.2-1.21 1.14-2.8.19-3.74Z"/></svg></span><strong id="statSessions">0</strong><span>Sessions booked</span></div>
+              <div class="db-stat"><span class="db-stat-icon"><svg class="lucide lucide-images" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 22H4a2 2 0 0 1-2-2V6"/><path d="m22 13-1.296-1.296a2.41 2.41 0 0 0-3.408 0L11 18"/><circle cx="12" cy="8" r="2"/><rect width="16" height="16" x="6" y="2" rx="2"/></svg></span><strong id="statLooks">0</strong><span>Looks selected</span></div>
+              <div class="db-stat"><span class="db-stat-icon"><svg class="lucide lucide-wallet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/></svg></span><strong id="statPaid">0%</strong><span>Package paid</span></div>
+              <div class="db-stat"><span class="db-stat-icon"><svg class="lucide lucide-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></span><strong id="statDays">0</strong><span>Days to go</span></div>
+            </div>
+            <div class="db-next" id="nextUp">
+              <span class="db-next-icon"><svg class="lucide lucide-calendar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg></span>
+              <div class="db-next-body"><p class="db-next-kicker">Next up</p><h3 id="nextTitle">—</h3><p id="nextMeta"></p></div>
+              <a class="link-arrow" href="#sessions" data-jump>View sessions <svg class="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+            </div>
+          </section>
+
+          <!-- ===== Sessions: booked list + book a new session ===== -->
+          <section class="db-panel reveal" id="sessions" aria-labelledby="sesTitle">
+            <header class="db-panel-head">
+              <div><p class="eyebrow">Sessions</p><h2 id="sesTitle">Trial &amp; event-day sessions</h2></div>
+              <span class="db-chip" id="sessionCount">0 booked</span>
+            </header>
+            <div class="db-sessions">
+              <ol class="db-session-list" id="sessionList" aria-live="polite"></ol>
+
+              <form class="db-book" id="bookForm" novalidate>
+                <h3><svg class="lucide lucide-calendar-plus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21 13V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8"/><path d="M3 10h18"/><path d="M16 19h6"/><path d="M19 16v6"/></svg>Book a session</h3>
+                <div class="db-field">
+                  <label for="bType">Session</label>
+                  <select id="bType" required><option value="Bridal Trial">Bridal Trial</option><option value="Engagement">Engagement</option><option value="Haldi &amp; Mehendi">Haldi &amp; Mehendi</option><option value="Wedding Day">Wedding Day</option><option value="Reception">Reception</option></select>
+                </div>
+                <div class="db-field">
+                  <label for="bDate">Date</label>
+                  <input id="bDate" type="date" required />
+                  <p class="db-error" aria-live="polite"></p>
+                </div>
+                <fieldset class="db-field db-slots">
+                  <legend>Time slot</legend>
+                  <div class="db-chips"><label><input type="radio" name="slot" value="06:00 AM" /><span>06:00 AM</span></label><label><input type="radio" name="slot" value="09:00 AM" /><span>09:00 AM</span></label><label><input type="radio" name="slot" value="11:00 AM" /><span>11:00 AM</span></label><label><input type="radio" name="slot" value="02:00 PM" /><span>02:00 PM</span></label><label><input type="radio" name="slot" value="05:00 PM" /><span>05:00 PM</span></label></div>
+                  <p class="db-error" aria-live="polite"></p>
+                </fieldset>
+                <fieldset class="db-field db-places">
+                  <legend>Where</legend>
+                  <div class="db-chips"><label><input type="radio" name="place" value="Studio" checked /><span><svg class="lucide lucide-building" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></svg>Studio</span></label><label><input type="radio" name="place" value="Home" /><span><svg class="lucide lucide-home" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>Home</span></label><label><input type="radio" name="place" value="Venue" /><span><svg class="lucide lucide-map-pin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Venue</span></label></div>
+                </fieldset>
+                <button class="btn btn-primary btn-book" type="submit"><svg class="lucide lucide-calendar-plus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21 13V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8"/><path d="M3 10h18"/><path d="M16 19h6"/><path d="M19 16v6"/></svg><span>Request Session</span></button>
+                <p class="db-hint">New requests show as <strong>Pending</strong> until your artist confirms.</p>
+              </form>
+            </div>
+          </section>
+
+          <!-- ===== Look references: pick up to 3 per ceremony ===== -->
+          <section class="db-panel reveal" id="looks" aria-labelledby="lookTitle">
+            <header class="db-panel-head">
+              <div><p class="eyebrow">Look References</p><h2 id="lookTitle">Choose your looks</h2></div>
+              <span class="db-chip" id="pickCount">0 / 3 selected</span>
+            </header>
+            <div class="db-tabs" role="tablist" aria-label="Ceremony">
+              <span class="db-tab-ink" aria-hidden="true"></span>
+              <button class="db-tab is-active" type="button" role="tab" aria-selected="true" data-ceremony="Wedding">Wedding<span class="db-tab-count" data-count-for="Wedding">0</span></button><button class="db-tab" type="button" role="tab" aria-selected="false" data-ceremony="Reception">Reception<span class="db-tab-count" data-count-for="Reception">0</span></button><button class="db-tab" type="button" role="tab" aria-selected="false" data-ceremony="Engagement">Engagement<span class="db-tab-count" data-count-for="Engagement">0</span></button><button class="db-tab" type="button" role="tab" aria-selected="false" data-ceremony="Haldi">Haldi<span class="db-tab-count" data-count-for="Haldi">0</span></button>
+            </div>
+            <p class="db-sub">Tap up to three looks for each ceremony. Your artist sees your picks and notes before your trial.</p>
+            <div class="db-looks" id="lookGrid">
+              <button class="db-look" type="button" data-look="l1" data-img="https://images.unsplash.com/photo-1610047614301-13c63f00c032?auto=format&amp;fit=crop&amp;w=400&amp;q=80" aria-pressed="false" style="--d:0.00s">
+                <span class="photo" style="--img:url('https://images.unsplash.com/photo-1610047614301-13c63f00c032?auto=format&amp;fit=crop&amp;w=500&amp;q=80'); --ph:linear-gradient(160deg,#f6e2df,#c4587a)"></span>
+                <span class="db-look-check" aria-hidden="true"><svg class="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>
+                <span class="db-look-info"><strong>Classic Red Bride</strong><small>Bold · Traditional</small></span>
+              </button>
+              <button class="db-look" type="button" data-look="l2" data-img="https://images.unsplash.com/photo-1684868268327-7e5590bcfbd6?auto=format&amp;fit=crop&amp;w=400&amp;q=80" aria-pressed="false" style="--d:0.06s">
+                <span class="photo" style="--img:url('https://images.unsplash.com/photo-1684868268327-7e5590bcfbd6?auto=format&amp;fit=crop&amp;w=500&amp;q=80'); --ph:linear-gradient(160deg,#f7eedf,#c9a96e)"></span>
+                <span class="db-look-check" aria-hidden="true"><svg class="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>
+                <span class="db-look-info"><strong>Soft Glam Glow</strong><small>Soft · Dewy</small></span>
+              </button>
+              <button class="db-look" type="button" data-look="l3" data-img="https://images.unsplash.com/photo-1610173827043-9db50e0d8ef9?auto=format&amp;fit=crop&amp;w=400&amp;q=80" aria-pressed="false" style="--d:0.12s">
+                <span class="photo" style="--img:url('https://images.unsplash.com/photo-1610173827043-9db50e0d8ef9?auto=format&amp;fit=crop&amp;w=500&amp;q=80'); --ph:linear-gradient(160deg,#f2d3cd,#a0455c)"></span>
+                <span class="db-look-check" aria-hidden="true"><svg class="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>
+                <span class="db-look-info"><strong>Pastel Romance</strong><small>Pastel · Florals</small></span>
+              </button>
+              <button class="db-look" type="button" data-look="l4" data-img="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&amp;fit=crop&amp;w=400&amp;q=80" aria-pressed="false" style="--d:0.18s">
+                <span class="photo" style="--img:url('https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&amp;fit=crop&amp;w=500&amp;q=80'); --ph:linear-gradient(160deg,#dcaaa3,#8a4a55)"></span>
+                <span class="db-look-check" aria-hidden="true"><svg class="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>
+                <span class="db-look-info"><strong>Bronze Goddess</strong><small>Bronze · Defined</small></span>
+              </button>
+              <button class="db-look" type="button" data-look="l5" data-img="https://images.unsplash.com/photo-1672788725446-c303ec2b318e?auto=format&amp;fit=crop&amp;w=400&amp;q=80" aria-pressed="false" style="--d:0.00s">
+                <span class="photo" style="--img:url('https://images.unsplash.com/photo-1672788725446-c303ec2b318e?auto=format&amp;fit=crop&amp;w=500&amp;q=80'); --ph:linear-gradient(160deg,#f6e2df,#c4587a)"></span>
+                <span class="db-look-check" aria-hidden="true"><svg class="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>
+                <span class="db-look-info"><strong>Jasmine Bun</strong><small>Hair · Florals</small></span>
+              </button>
+              <button class="db-look" type="button" data-look="l6" data-img="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&amp;fit=crop&amp;w=400&amp;q=80" aria-pressed="false" style="--d:0.06s">
+                <span class="photo" style="--img:url('https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&amp;fit=crop&amp;w=500&amp;q=80'); --ph:linear-gradient(160deg,#f7eedf,#c9a96e)"></span>
+                <span class="db-look-check" aria-hidden="true"><svg class="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>
+                <span class="db-look-info"><strong>Hollywood Waves</strong><small>Hair · Glam</small></span>
+              </button>
+              <button class="db-look" type="button" data-look="l7" data-img="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&amp;fit=crop&amp;w=400&amp;q=80" aria-pressed="false" style="--d:0.12s">
+                <span class="photo" style="--img:url('https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&amp;fit=crop&amp;w=500&amp;q=80'); --ph:linear-gradient(160deg,#f2d3cd,#a0455c)"></span>
+                <span class="db-look-check" aria-hidden="true"><svg class="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>
+                <span class="db-look-info"><strong>Heirloom Jewels</strong><small>Jewellery · Regal</small></span>
+              </button>
+              <button class="db-look" type="button" data-look="l8" data-img="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&amp;fit=crop&amp;w=400&amp;q=80" aria-pressed="false" style="--d:0.18s">
+                <span class="photo" style="--img:url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&amp;fit=crop&amp;w=500&amp;q=80'); --ph:linear-gradient(160deg,#dcaaa3,#8a4a55)"></span>
+                <span class="db-look-check" aria-hidden="true"><svg class="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>
+                <span class="db-look-info"><strong>Minimal Nude</strong><small>Minimal · Matte</small></span>
+              </button>
+            </div>
+            <div class="db-picks">
+              <div class="db-picks-head"><h3>Your picks for <span id="pickCeremony">Wedding</span></h3></div>
+              <ul class="db-picks-list" id="pickList" aria-live="polite"></ul>
+              <label class="db-notes">
+                <span>Notes for your artist</span>
+                <textarea id="lookNotes" rows="3" maxlength="400" placeholder="Colours you love, things to avoid, jewellery you'll wear…"></textarea>
+              </label>
+            </div>
+          </section>
+
+          <!-- ===== Payments: progress ring + instalments ===== -->
+          <section class="db-panel reveal" id="payments" aria-labelledby="payTitle">
+            <header class="db-panel-head">
+              <div><p class="eyebrow">Payments</p><h2 id="payTitle">Instalments</h2></div>
+              <span class="db-chip" id="payStatusChip">On track</span>
+            </header>
+            <div class="db-pay">
+              <div class="db-pay-summary">
+                <div class="db-ring" style="--pct:0">
+                  <svg viewBox="0 0 120 120" aria-hidden="true">
+                    <circle class="db-ring-track" cx="60" cy="60" r="52" />
+                    <circle class="db-ring-bar" cx="60" cy="60" r="52" pathLength="100" />
+                  </svg>
+                  <div class="db-ring-label"><strong id="payPct">0%</strong><span>paid</span></div>
+                </div>
+                <dl class="db-pay-totals">
+                  <div><dt>Package total</dt><dd id="payTotal">₹0</dd></div>
+                  <div><dt>Paid so far</dt><dd id="payPaid">₹0</dd></div>
+                  <div><dt>Balance</dt><dd id="payBalance">₹0</dd></div>
+                </dl>
+              </div>
+              <ol class="db-instalments" id="instalmentList" aria-live="polite"></ol>
+            </div>
+          </section>
+
+      </div>
+      <p class="app-foot">© <span id="year"></span> <span class="brand-name">Blush &amp; Bloom</span> Bridal Studio · <a href="index.html">Visit website</a></p>
+    </main>
+  </div>
+  <!-- ============ PAY DIALOG (demo) ============ -->
+  <dialog class="db-modal" id="payModal" aria-labelledby="payModalTitle">
+    <button class="db-modal-close" type="button" data-close aria-label="Close"><svg class="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>
+    <span class="db-modal-icon"><svg class="lucide lucide-wallet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/></svg></span>
+    <p class="eyebrow">Pay instalment</p>
+    <h3 id="payModalTitle">—</h3>
+    <p class="db-modal-amount" id="payModalAmount">₹0</p>
+    <fieldset class="db-field db-methods">
+      <legend>Pay with</legend>
+      <div class="db-chips"><label><input type="radio" name="payMethod" value="UPI" checked /><span><svg class="lucide lucide-smartphone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>UPI</span></label><label><input type="radio" name="payMethod" value="Card" /><span><svg class="lucide lucide-credit-card" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/></svg>Card</span></label><label><input type="radio" name="payMethod" value="Net banking" /><span><svg class="lucide lucide-landmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" x2="21" y1="22" y2="22"/><line x1="6" x2="6" y1="18" y2="11"/><line x1="10" x2="10" y1="18" y2="11"/><line x1="14" x2="14" y1="18" y2="11"/><line x1="18" x2="18" y1="18" y2="11"/><polygon points="12 2 20 7 4 7"/></svg>Net banking</span></label></div>
+    </fieldset>
+    <p class="db-modal-note"><svg class="lucide lucide-alert-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></svg>Demo only: no money is taken. Connect a payment gateway before launch.</p>
+    <div class="db-modal-actions">
+      <button class="btn btn-outline" type="button" data-close>Cancel</button>
+      <button class="btn btn-primary btn-book" type="button" id="payConfirm"><svg class="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Confirm Payment</span></button>
+    </div>
+  </dialog>
+  <div class="db-toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/dashboard.js" defer></script>
+</body>
+</html>

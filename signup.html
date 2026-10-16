@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create Account | Blush &amp; Bloom Bridal Studio</title>
+  <meta name="description" content="Create your Blush &amp; Bloom account to book trials, save looks and track payments." />
+
+  <!-- Apply saved theme / direction before paint (prevents flash) -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('bb-theme');
+        var d = localStorage.getItem('bb-dir');
+        if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', t);
+        if (d) document.documentElement.setAttribute('dir', d);
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- Favicon: floral-silhouette bride (inline SVG, no extra file) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%222 -1 116 118%22%3E%3Cstyle%3E.lm-veil%7Bfill:%23C9A35F%7D.lm-hair,.lm-part,.lm-hole%7Bfill:%23A0455C%7D.lm-face,.lm-petals%7Bfill:%23fff%7D.lm-jewel,.lm-dot,.lm-gem%7Bfill:%23C9A35F%7D.lm-neck,.lm-chain%7Bfill:none;stroke:%23C9A35F;stroke-width:2.4;stroke-linecap:round%7D%3C/style%3E%3Cpath class=%22lm-veil%22 d=%22M60 10 C 28 10, 14 40, 14 72 C 14 94, 10 106, 4 116 L 116 116 C 110 106, 106 94, 106 72 C 106 40, 92 10, 60 10 Z%22/%3E%3Cpath class=%22lm-hair%22 d=%22M60 22 C 38 22, 30 42, 30 64 C 30 82, 28 96, 24 116 L 96 116 C 92 96, 90 82, 90 64 C 90 42, 82 22, 60 22 Z%22/%3E%3Cpath class=%22lm-face%22 d=%22M60 34 C 50 36, 44 44, 44 56 C 44 70, 51 80, 60 80 C 69 80, 76 70, 76 56 C 76 44, 70 36, 60 34 Z M53 79 L53 88 C 46 90, 40 98, 38 116 L 82 116 C 80 98, 74 90, 67 88 L 67 79 Z%22/%3E%3Cpath class=%22lm-part%22 d=%22M60 34 C 56 40, 50 44, 44 48 L 44 44 C 48 40, 54 35, 60 34 Z M60 34 C 64 40, 70 44, 76 48 L 76 44 C 72 40, 66 35, 60 34 Z%22/%3E%3Cg class=%22lm-jewel%22%3E%3Cpath class=%22lm-neck%22 d=%22M53 89 C 56 95, 64 95, 67 89%22/%3E%3Ccircle cx=%2260%22 cy=%2297%22 r=%222.2%22/%3E%3Cpath class=%22lm-chain%22 d=%22M60 35 L60 41%22/%3E%3Cpath d=%22M60 41 L62.6 44 L60 47 L57.4 44 Z%22/%3E%3C/g%3E%3Cg class=%22lm-flower%22 style=%22--f:0%22%3E%3Cg class=%22lm-petals%22%3E%3Ccircle cx=%2243.2%22 cy=%2236.1%22 r=%222.03%22/%3E%3Ccircle cx=%2245.7%22 cy=%2237.9%22 r=%222.03%22/%3E%3Ccircle cx=%2244.7%22 cy=%2240.8%22 r=%222.03%22/%3E%3Ccircle cx=%2241.7%22 cy=%2240.8%22 r=%222.03%22/%3E%3Ccircle cx=%2240.7%22 cy=%2237.9%22 r=%222.03%22/%3E%3C/g%3E%3Ccircle class=%22lm-hole%22 cx=%2243.2%22 cy=%2238.7%22 r=%221.43%22/%3E%3Ccircle class=%22lm-dot%22 cx=%2243.2%22 cy=%2238.7%22 r=%220.83%22/%3E%3C/g%3E%3Cg class=%22lm-flower%22 style=%22--f:1%22%3E%3Cg class=%22lm-petals%22%3E%3Ccircle cx=%2248.8%22 cy=%2227.4%22 r=%222.50%22/%3E%3Ccircle cx=%2251.8%22 cy=%2229.6%22 r=%222.50%22/%3E%3Ccircle cx=%2250.7%22 cy=%2233.2%22 r=%222.50%22/%3E%3Ccircle cx=%2246.9%22 cy=%2233.2%22 r=%222.50%22/%3E%3Ccircle cx=%2245.8%22 cy=%2229.6%22 r=%222.50%22/%3E%3C/g%3E%3Ccircle class=%22lm-hole%22 cx=%2248.8%22 cy=%2230.6%22 r=%221.76%22/%3E%3Ccircle class=%22lm-dot%22 cx=%2248.8%22 cy=%2230.6%22 r=%221.02%22/%3E%3C/g%3E%3Cg class=%22lm-flower%22 style=%22--f:2%22%3E%3Cg class=%22lm-petals%22%3E%3Ccircle cx=%2260.0%22 cy=%2221.8%22 r=%223.28%22/%3E%3Ccircle cx=%2264.0%22 cy=%2224.7%22 r=%223.28%22/%3E%3Ccircle cx=%2262.5%22 cy=%2229.4%22 r=%223.28%22/%3E%3Ccircle cx=%2257.5%22 cy=%2229.4%22 r=%223.28%22/%3E%3Ccircle cx=%2256.0%22 cy=%2224.7%22 r=%223.28%22/%3E%3C/g%3E%3Ccircle class=%22lm-hole%22 cx=%2260.0%22 cy=%2226.0%22 r=%222.31%22/%3E%3Ccircle class=%22lm-dot%22 cx=%2260.0%22 cy=%2226.0%22 r=%221.34%22/%3E%3C/g%3E%3Cg class=%22lm-flower%22 style=%22--f:3%22%3E%3Cg class=%22lm-petals%22%3E%3Ccircle cx=%2271.2%22 cy=%2227.4%22 r=%222.50%22/%3E%3Ccircle cx=%2274.2%22 cy=%2229.6%22 r=%222.50%22/%3E%3Ccircle cx=%2273.1%22 cy=%2233.2%22 r=%222.50%22/%3E%3Ccircle cx=%2269.3%22 cy=%2233.2%22 r=%222.50%22/%3E%3Ccircle cx=%2268.2%22 cy=%2229.6%22 r=%222.50%22/%3E%3C/g%3E%3Ccircle class=%22lm-hole%22 cx=%2271.2%22 cy=%2230.6%22 r=%221.76%22/%3E%3Ccircle class=%22lm-dot%22 cx=%2271.2%22 cy=%2230.6%22 r=%221.02%22/%3E%3C/g%3E%3Cg class=%22lm-flower%22 style=%22--f:4%22%3E%3Cg class=%22lm-petals%22%3E%3Ccircle cx=%2276.8%22 cy=%2236.1%22 r=%222.03%22/%3E%3Ccircle cx=%2279.3%22 cy=%2237.9%22 r=%222.03%22/%3E%3Ccircle cx=%2278.3%22 cy=%2240.8%22 r=%222.03%22/%3E%3Ccircle cx=%2275.3%22 cy=%2240.8%22 r=%222.03%22/%3E%3Ccircle cx=%2274.3%22 cy=%2237.9%22 r=%222.03%22/%3E%3C/g%3E%3Ccircle class=%22lm-hole%22 cx=%2276.8%22 cy=%2238.7%22 r=%221.43%22/%3E%3Ccircle class=%22lm-dot%22 cx=%2276.8%22 cy=%2238.7%22 r=%220.83%22/%3E%3C/g%3E%3Cpath class=%22lm-gem%22 d=%22M60 0 L63 5 L60 10 L57 5 Z%22/%3E%3C/svg%3E" />
+  <meta name="theme-color" content="#A0455C" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Jost:wght@300..600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/signup.css" />
+</head>
+<body class="auth-body">
+
+  <!-- ============ PRELOADER (logo + text animation) ============ -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="pre-inner">
+      <svg class="pre-logo" viewBox="2 -1 116 118" aria-hidden="true"><path class="lm-veil" d="M60 10 C 28 10, 14 40, 14 72 C 14 94, 10 106, 4 116 L 116 116 C 110 106, 106 94, 106 72 C 106 40, 92 10, 60 10 Z"/><path class="lm-hair" d="M60 22 C 38 22, 30 42, 30 64 C 30 82, 28 96, 24 116 L 96 116 C 92 96, 90 82, 90 64 C 90 42, 82 22, 60 22 Z"/><path class="lm-face" d="M60 34 C 50 36, 44 44, 44 56 C 44 70, 51 80, 60 80 C 69 80, 76 70, 76 56 C 76 44, 70 36, 60 34 Z M53 79 L53 88 C 46 90, 40 98, 38 116 L 82 116 C 80 98, 74 90, 67 88 L 67 79 Z"/><path class="lm-part" d="M60 34 C 56 40, 50 44, 44 48 L 44 44 C 48 40, 54 35, 60 34 Z M60 34 C 64 40, 70 44, 76 48 L 76 44 C 72 40, 66 35, 60 34 Z"/><g class="lm-jewel"><path class="lm-neck" d="M53 89 C 56 95, 64 95, 67 89"/><circle cx="60" cy="97" r="2.2"/><path class="lm-chain" d="M60 35 L60 41"/><path d="M60 41 L62.6 44 L60 47 L57.4 44 Z"/></g><g class="lm-flower" style="--f:0"><g class="lm-petals"><circle cx="43.2" cy="36.1" r="2.03"/><circle cx="45.7" cy="37.9" r="2.03"/><circle cx="44.7" cy="40.8" r="2.03"/><circle cx="41.7" cy="40.8" r="2.03"/><circle cx="40.7" cy="37.9" r="2.03"/></g><circle class="lm-hole" cx="43.2" cy="38.7" r="1.43"/><circle class="lm-dot" cx="43.2" cy="38.7" r="0.83"/></g><g class="lm-flower" style="--f:1"><g class="lm-petals"><circle cx="48.8" cy="27.4" r="2.50"/><circle cx="51.8" cy="29.6" r="2.50"/><circle cx="50.7" cy="33.2" r="2.50"/><circle cx="46.9" cy="33.2" r="2.50"/><circle cx="45.8" cy="29.6" r="2.50"/></g><circle class="lm-hole" cx="48.8" cy="30.6" r="1.76"/><circle class="lm-dot" cx="48.8" cy="30.6" r="1.02"/></g><g class="lm-flower" style="--f:2"><g class="lm-petals"><circle cx="60.0" cy="21.8" r="3.28"/><circle cx="64.0" cy="24.7" r="3.28"/><circle cx="62.5" cy="29.4" r="3.28"/><circle cx="57.5" cy="29.4" r="3.28"/><circle cx="56.0" cy="24.7" r="3.28"/></g><circle class="lm-hole" cx="60.0" cy="26.0" r="2.31"/><circle class="lm-dot" cx="60.0" cy="26.0" r="1.34"/></g><g class="lm-flower" style="--f:3"><g class="lm-petals"><circle cx="71.2" cy="27.4" r="2.50"/><circle cx="74.2" cy="29.6" r="2.50"/><circle cx="73.1" cy="33.2" r="2.50"/><circle cx="69.3" cy="33.2" r="2.50"/><circle cx="68.2" cy="29.6" r="2.50"/></g><circle class="lm-hole" cx="71.2" cy="30.6" r="1.76"/><circle class="lm-dot" cx="71.2" cy="30.6" r="1.02"/></g><g class="lm-flower" style="--f:4"><g class="lm-petals"><circle cx="76.8" cy="36.1" r="2.03"/><circle cx="79.3" cy="37.9" r="2.03"/><circle cx="78.3" cy="40.8" r="2.03"/><circle cx="75.3" cy="40.8" r="2.03"/><circle cx="74.3" cy="37.9" r="2.03"/></g><circle class="lm-hole" cx="76.8" cy="38.7" r="1.43"/><circle class="lm-dot" cx="76.8" cy="38.7" r="0.83"/></g><path class="lm-gem" d="M60 0 L63 5 L60 10 L57 5 Z"/></svg>
+      <p class="pre-title brand-name" data-split>Blush &amp; Bloom</p>
+      <p class="pre-sub">Bridal Studio</p>
+    </div>
+  </div>
+
+
+  <!-- ============ FULL-SCREEN BACKGROUND IMAGE ============ -->
+  <div class="auth-bg" aria-hidden="true">
+    <span class="photo" style="--img:url('https://images.unsplash.com/photo-1684868268327-7e5590bcfbd6?auto=format&amp;fit=crop&amp;w=2000&amp;q=80'); --ph:linear-gradient(160deg,#f2d3cd,#a0455c)"></span>
+  </div>
+
+  <!-- ============ RTL / THEME TOGGLES (top corner) ============ -->
+  <div class="auth-tools">
+    <button class="icon-btn dir-toggle" id="dirToggle" type="button" aria-label="Switch text direction" title="LTR / RTL">
+          <span class="dir-label">RTL</span>
+        </button>
+    <button class="icon-btn theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark theme" title="Light / Dark">
+          <svg class="lucide lucide-moon i-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          <svg class="lucide lucide-sun i-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+        </button>
+  </div>
+
+  <main class="auth">
+    <div class="auth-card">
+      <!-- Logo (same as Home 1 header), centred at the top of the form -->
+      <a href="index.html" class="logo auth-logo" aria-label="Blush &amp; Bloom home">
+        <svg class="logo-mark" viewBox="2 -1 116 118" aria-hidden="true"><path class="lm-veil" d="M60 10 C 28 10, 14 40, 14 72 C 14 94, 10 106, 4 116 L 116 116 C 110 106, 106 94, 106 72 C 106 40, 92 10, 60 10 Z"/><path class="lm-hair" d="M60 22 C 38 22, 30 42, 30 64 C 30 82, 28 96, 24 116 L 96 116 C 92 96, 90 82, 90 64 C 90 42, 82 22, 60 22 Z"/><path class="lm-face" d="M60 34 C 50 36, 44 44, 44 56 C 44 70, 51 80, 60 80 C 69 80, 76 70, 76 56 C 76 44, 70 36, 60 34 Z M53 79 L53 88 C 46 90, 40 98, 38 116 L 82 116 C 80 98, 74 90, 67 88 L 67 79 Z"/><path class="lm-part" d="M60 34 C 56 40, 50 44, 44 48 L 44 44 C 48 40, 54 35, 60 34 Z M60 34 C 64 40, 70 44, 76 48 L 76 44 C 72 40, 66 35, 60 34 Z"/><g class="lm-jewel"><path class="lm-neck" d="M53 89 C 56 95, 64 95, 67 89"/><circle cx="60" cy="97" r="2.2"/><path class="lm-chain" d="M60 35 L60 41"/><path d="M60 41 L62.6 44 L60 47 L57.4 44 Z"/></g><g class="lm-flower" style="--f:0"><g class="lm-petals"><circle cx="43.2" cy="36.1" r="2.03"/><circle cx="45.7" cy="37.9" r="2.03"/><circle cx="44.7" cy="40.8" r="2.03"/><circle cx="41.7" cy="40.8" r="2.03"/><circle cx="40.7" cy="37.9" r="2.03"/></g><circle class="lm-hole" cx="43.2" cy="38.7" r="1.43"/><circle class="lm-dot" cx="43.2" cy="38.7" r="0.83"/></g><g class="lm-flower" style="--f:1"><g class="lm-petals"><circle cx="48.8" cy="27.4" r="2.50"/><circle cx="51.8" cy="29.6" r="2.50"/><circle cx="50.7" cy="33.2" r="2.50"/><circle cx="46.9" cy="33.2" r="2.50"/><circle cx="45.8" cy="29.6" r="2.50"/></g><circle class="lm-hole" cx="48.8" cy="30.6" r="1.76"/><circle class="lm-dot" cx="48.8" cy="30.6" r="1.02"/></g><g class="lm-flower" style="--f:2"><g class="lm-petals"><circle cx="60.0" cy="21.8" r="3.28"/><circle cx="64.0" cy="24.7" r="3.28"/><circle cx="62.5" cy="29.4" r="3.28"/><circle cx="57.5" cy="29.4" r="3.28"/><circle cx="56.0" cy="24.7" r="3.28"/></g><circle class="lm-hole" cx="60.0" cy="26.0" r="2.31"/><circle class="lm-dot" cx="60.0" cy="26.0" r="1.34"/></g><g class="lm-flower" style="--f:3"><g class="lm-petals"><circle cx="71.2" cy="27.4" r="2.50"/><circle cx="74.2" cy="29.6" r="2.50"/><circle cx="73.1" cy="33.2" r="2.50"/><circle cx="69.3" cy="33.2" r="2.50"/><circle cx="68.2" cy="29.6" r="2.50"/></g><circle class="lm-hole" cx="71.2" cy="30.6" r="1.76"/><circle class="lm-dot" cx="71.2" cy="30.6" r="1.02"/></g><g class="lm-flower" style="--f:4"><g class="lm-petals"><circle cx="76.8" cy="36.1" r="2.03"/><circle cx="79.3" cy="37.9" r="2.03"/><circle cx="78.3" cy="40.8" r="2.03"/><circle cx="75.3" cy="40.8" r="2.03"/><circle cx="74.3" cy="37.9" r="2.03"/></g><circle class="lm-hole" cx="76.8" cy="38.7" r="1.43"/><circle class="lm-dot" cx="76.8" cy="38.7" r="0.83"/></g><path class="lm-gem" d="M60 0 L63 5 L60 10 L57 5 Z"/></svg>
+        <span class="logo-text">
+          <strong class="brand-name">Blush &amp; Bloom</strong>
+          <small>Bridal Studio</small>
+        </span>
+      </a>
+      <h1>Create your <em>account</em></h1>
+      <p class="auth-lead">Book trials, save looks and track payments in one place.</p>
+
+      <!-- Front-end only: replace with your real (server-side) sign-in before launch. -->
+      <form class="auth-form" id="signupForm" novalidate>
+        <div class="auth-field">
+          <label for="sName">Full name</label>
+          <div class="auth-input"><svg class="lucide lucide-user" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><input id="sName" type="text" autocomplete="name" placeholder="Your name" required /></div>
+          <p class="auth-error" aria-live="polite"></p>
+        </div>
+        <div class="auth-field">
+          <label for="sUser">Email or phone</label>
+          <div class="auth-input"><svg class="lucide lucide-mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><input id="sUser" type="text" autocomplete="username" placeholder="you@example.com" required /></div>
+          <p class="auth-error" aria-live="polite"></p>
+        </div>
+        <div class="auth-field">
+          <label for="sPass">Password</label>
+          <div class="auth-input"><svg class="lucide lucide-lock" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><input id="sPass" type="password" autocomplete="new-password" placeholder="At least 8 characters" minlength="8" required />
+            <button class="auth-eye" type="button" id="togglePass" aria-label="Show password" aria-pressed="false"><svg class="lucide lucide-eye i-show" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg><svg class="lucide lucide-eye-off i-hide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.733 5.076a10.744 10.744 0 0 1 11.205 6.575 1 1 0 0 1 0 .696 10.747 10.747 0 0 1-1.444 2.49"/><path d="M14.084 14.158a3 3 0 0 1-4.242-4.242"/><path d="M17.479 17.499a10.75 10.75 0 0 1-15.417-5.151 1 1 0 0 1 0-.696 10.75 10.75 0 0 1 4.446-5.143"/><path d="m2 2 20 20"/></svg></button>
+          </div>
+          <div class="auth-strength" id="strength" data-level="0" aria-hidden="true"><span></span><span></span><span></span><span></span><em id="strengthText"></em></div>
+          <p class="auth-error" aria-live="polite"></p>
+        </div>
+        <div class="auth-field auth-terms-field">
+          <label class="auth-remember auth-terms"><input type="checkbox" id="sTerms" /><span class="auth-box"><svg class="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><span>I agree to the <a href="#" id="termsLink">terms</a> &amp; <a href="#" id="privacyLink">privacy policy</a></span></label>
+          <p class="auth-error" aria-live="polite"></p>
+        </div>
+        <button class="btn btn-primary btn-book auth-submit" type="submit"><svg class="lucide lucide-user-plus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" x2="19" y1="8" y2="14"/><line x1="22" x2="16" y1="11" y2="11"/></svg><span>Create Account</span></button>
+        <p class="auth-msg" id="authMsg" role="status" aria-live="polite"></p>
+      </form>
+
+      <p class="auth-or"><span>or sign up with</span></p>
+      <!-- Social sign-in (demo) — connect Google / Apple OAuth on your server before launch -->
+      <div class="auth-social">
+        <button class="auth-soc" type="button" data-provider="Google"><svg class="soc-ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M23.52 12.27c0-.85-.08-1.67-.22-2.45H12v4.64h6.46a5.52 5.52 0 0 1-2.4 3.62v3h3.88c2.27-2.09 3.58-5.17 3.58-8.81Z"/><path fill="currentColor" d="M12 24c3.24 0 5.96-1.07 7.94-2.9l-3.88-3.01c-1.07.72-2.45 1.15-4.06 1.15-3.12 0-5.77-2.11-6.71-4.95H1.28v3.1A12 12 0 0 0 12 24Z"/><path fill="currentColor" d="M5.29 14.29A7.2 7.2 0 0 1 4.91 12c0-.8.14-1.57.38-2.29V6.6H1.28A12 12 0 0 0 0 12c0 1.94.46 3.77 1.28 5.4l4.01-3.11Z"/><path fill="currentColor" d="M12 4.77c1.76 0 3.34.61 4.59 1.8l3.44-3.44A11.5 11.5 0 0 0 12 0 12 12 0 0 0 1.28 6.6l4.01 3.11C6.23 6.88 8.88 4.77 12 4.77Z"/></svg><span>Google</span></button>
+        <button class="auth-soc" type="button" data-provider="Apple"><svg class="soc-ico soc-apple" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.37 12.77c-.03-2.6 2.12-3.85 2.22-3.91-1.21-1.77-3.09-2.01-3.76-2.04-1.6-.16-3.12.94-3.93.94-.81 0-2.06-.92-3.39-.89-1.74.03-3.35 1.01-4.25 2.57-1.81 3.14-.46 7.79 1.3 10.34.86 1.25 1.89 2.65 3.23 2.6 1.3-.05 1.79-.84 3.36-.84s2.01.84 3.38.81c1.4-.02 2.28-1.27 3.13-2.52.99-1.45 1.39-2.85 1.42-2.92-.03-.01-2.72-1.04-2.71-4.14ZM13.79 5.14c.71-.86 1.19-2.06 1.06-3.25-1.02.04-2.27.68-3 1.54-.66.76-1.23 1.98-1.08 3.15 1.14.09 2.31-.58 3.02-1.44Z"/></svg><span>Apple</span></button>
+      </div>
+
+      <p class="auth-alt">Already have an account? <a href="login.html">Log in</a></p>
+    </div>
+  </main>
+
+  <script src="js/signup.js" defer></script>
+</body>
+</html>
