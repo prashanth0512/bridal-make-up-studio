@@ -660,6 +660,7 @@ html { scroll-padding-top: calc(var(--header-h) + 1rem); }
   background: var(--bg); border: 1px solid var(--line); border-radius: 12px;
   font-size: .94rem; transition: border-color .3s, box-shadow .3s, background-color .3s;
 }
+.c-field input::placeholder, .c-field textarea::placeholder { color: var(--muted); opacity: .78; }
 .c-field textarea { font: inherit; font-size: .94rem; resize: vertical; min-height: 120px; line-height: 1.6; }
 .c-field input:hover, .c-field select:hover, .c-field textarea:hover { border-color: var(--gold); }
 .c-field input:focus, .c-field select:focus, .c-field textarea:focus { outline: none; border-color: var(--rose); box-shadow: 0 0 0 3px rgba(160, 69, 92, .15); }

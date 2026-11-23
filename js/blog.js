@@ -136,23 +136,36 @@
 
   /* ---------- Active link highlighting (page-based) ---------- */
   const topLinks = $$('.nav-link');
-  const page = (decodeURIComponent(location.pathname.split('/').pop()) || 'index.html').toLowerCase();
-  const homePages = ['index.html', 'home2.html'];
+  const cleanPage = s => (decodeURIComponent(s || '').replace(/\/+$/, '').split('/').pop() || '')
+    .replace(/\.html?$/i, '')
+    .toLowerCase();
+  const page = cleanPage(location.pathname) || 'index';
+  const homePages = ['index', 'home2'];
 
   $$('.dropdown-link').forEach(a => {
-    const on = a.getAttribute('href').toLowerCase() === page;
+    const on = cleanPage(a.getAttribute('href')) === page;
     a.classList.toggle('is-current', on);
     if (on) a.setAttribute('aria-current', 'page');
+    else a.removeAttribute('aria-current');
   });
 
   let activeLink = null;
   if (homePages.includes(page)) {
     activeLink = $('[data-home]');
   } else {
-    activeLink = topLinks.find(a => (a.getAttribute('href') || '').toLowerCase() === page) || null;
-    if (activeLink) activeLink.setAttribute('aria-current', 'page');
+    const target = (page.startsWith('servicedetails') || page.startsWith('service-details'))
+      ? 'services'
+      : (page.startsWith('blogdetails') || page.startsWith('blog-details'))
+        ? 'blog'
+        : page;
+    activeLink = topLinks.find(a => cleanPage(a.getAttribute('href')) === target) || null;
   }
-  topLinks.forEach(a => a.classList.toggle('is-active', a === activeLink));
+  topLinks.forEach(a => {
+    const isActive = a === activeLink;
+    a.classList.toggle('is-active', isActive);
+    if (isActive && a.hasAttribute('href')) a.setAttribute('aria-current', 'page');
+    else a.removeAttribute('aria-current');
+  });
 
   /* ---------- Scroll animations (every section) ---------- */
 

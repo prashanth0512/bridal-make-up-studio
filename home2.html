@@ -52,13 +52,13 @@
       <nav class="nav" id="nav" aria-label="Primary">
         <ul class="nav-list">
           <li class="has-dropdown" id="homeDropdown">
-            <button class="nav-link dropdown-toggle" type="button" data-home
+            <button class="nav-link dropdown-toggle is-active" type="button" data-home
                     aria-haspopup="true" aria-expanded="false" aria-controls="homeMenu">
               Home <svg class="lucide lucide-chevron-down chev" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
             </button>
             <ul class="dropdown" id="homeMenu">
               <li><a href="index.html" class="dropdown-link"><svg class="lucide lucide-layout-template" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="7" x="3" y="3" rx="1"/><rect width="9" height="7" x="3" y="14" rx="1"/><rect width="5" height="7" x="16" y="14" rx="1"/></svg><span>Home 1</span><small>Classic</small></a></li>
-              <li><a href="home2.html" class="dropdown-link"><svg class="lucide lucide-layout-dashboard" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></svg><span>Home 2</span><small>Modern</small></a></li>
+              <li><a href="home2.html" class="dropdown-link is-current" aria-current="page"><svg class="lucide lucide-layout-dashboard" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></svg><span>Home 2</span><small>Modern</small></a></li>
             </ul>
           </li>
           <li><a href="about.html" class="nav-link">About</a></li>
@@ -69,7 +69,7 @@
           <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
         </ul>
         <a class="btn btn-primary btn-book nav-book-mobile" href="login.html">
-          <svg class="lucide lucide-calendar-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h18V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7"/><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21.29 14.7a2.43 2.43 0 0 0-2.65-.52c-.3.12-.57.3-.8.53l-.34.34-.35-.34a2.43 2.43 0 0 0-2.65-.53c-.3.12-.56.3-.79.53-.95.94-1 2.53.2 3.74L17.5 22l3.6-3.55c1.2-1.21 1.14-2.8.19-3.74Z"/></svg><span>Book Now</span>
+          <svg class="lucide lucide-log-in" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" x2="3" y1="12" y2="12"/></svg><span>Sign In</span>
         </a>
       </nav>
 
@@ -82,7 +82,7 @@
           <span class="dir-label">RTL</span>
         </button>
         <a class="btn btn-primary btn-book nav-book" href="login.html">
-          <svg class="lucide lucide-calendar-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h18V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7"/><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21.29 14.7a2.43 2.43 0 0 0-2.65-.52c-.3.12-.57.3-.8.53l-.34.34-.35-.34a2.43 2.43 0 0 0-2.65-.53c-.3.12-.56.3-.79.53-.95.94-1 2.53.2 3.74L17.5 22l3.6-3.55c1.2-1.21 1.14-2.8.19-3.74Z"/></svg><span>Book Now</span>
+          <svg class="lucide lucide-log-in" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" x2="3" y1="12" y2="12"/></svg><span>Sign In</span>
         </a>
         <button class="hamburger" id="hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
           <svg class="lucide lucide-menu i-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
@@ -392,7 +392,7 @@
 
         <div class="m-posts">
           <article class="m-post reveal" style="--d:0s">
-            <a href="blog.html" class="m-post-img"><span class="photo" style="--img:url('../Images/blog-1.jpg'); --ph:linear-gradient(160deg,#f2d3cd,#a0455c)" role="img" aria-label="Bride with a rose in her hair"></span><span class="m-post-cat">Skin Prep</span></a>
+            <a href="blog.html" class="m-post-img"><span class="photo" style="--img:url('https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&amp;fit=crop&amp;w=1200&amp;q=85'); --ph:linear-gradient(160deg,#f2d3cd,#a0455c)" role="img" aria-label="Bridal skincare and facial glow preparation"></span><span class="m-post-cat">Skin Prep</span></a>
             <div class="m-post-body">
               <span class="m-post-meta"><svg class="lucide lucide-calendar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg>12 Sep 2026 · 5 min read</span>
               <h3><a href="blog.html">Your 8-week glow plan before the wedding</a></h3>
@@ -401,7 +401,7 @@
             </div>
           </article>
           <article class="m-post reveal" style="--d:.12s">
-            <a href="blog.html" class="m-post-img"><span class="photo" style="--img:url('../Images/blog-2.jpg'); --ph:linear-gradient(160deg,#f6e2df,#c4587a)" role="img" aria-label="Lipstick being applied"></span><span class="m-post-cat">Makeup</span></a>
+            <a href="blog.html" class="m-post-img"><span class="photo" style="--img:url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&amp;fit=crop&amp;w=1200&amp;q=85'); --ph:linear-gradient(160deg,#f6e2df,#c4587a)" role="img" aria-label="Bridal makeup artist applying lip and face makeup"></span><span class="m-post-cat">Makeup</span></a>
             <div class="m-post-body">
               <span class="m-post-meta"><svg class="lucide lucide-calendar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg>28 Aug 2026 · 4 min read</span>
               <h3><a href="blog.html">How to choose a lip colour for a red lehenga</a></h3>
@@ -410,7 +410,7 @@
             </div>
           </article>
           <article class="m-post reveal" style="--d:.24s">
-            <a href="blog.html" class="m-post-img"><span class="photo" style="--img:url('../Images/blog-3.jpg'); --ph:linear-gradient(160deg,#f7eedf,#c9a96e)" role="img" aria-label="Couple performing a wedding ritual"></span><span class="m-post-cat">Planning</span></a>
+            <a href="blog.html" class="m-post-img"><span class="photo" style="--img:url('https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&amp;fit=crop&amp;w=1200&amp;q=85'); --ph:linear-gradient(160deg,#f7eedf,#c9a96e)" role="img" aria-label="Bridal hairstyling and wedding morning preparation"></span><span class="m-post-cat">Planning</span></a>
             <div class="m-post-body">
               <span class="m-post-meta"><svg class="lucide lucide-calendar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg>10 Aug 2026 · 6 min read</span>
               <h3><a href="blog.html">A stress-free wedding-morning timeline</a></h3>
@@ -483,9 +483,9 @@
 
           <form class="m-form" id="appointForm" novalidate>
             <div class="m-form-grid">
-              <div class="field"><label for="aName">Full Name</label><input id="aName" name="name" type="text" required autocomplete="name" /></div>
-              <div class="field"><label for="aPhone">Phone</label><input id="aPhone" name="phone" type="tel" required autocomplete="tel" /></div>
-              <div class="field"><label for="aDate">Wedding Date</label><input id="aDate" name="date" type="date" required /></div>
+              <div class="field"><label for="aName">Full Name</label><input id="aName" name="name" type="text" placeholder="Enter your full name" required autocomplete="name" /></div>
+              <div class="field"><label for="aPhone">Phone</label><input id="aPhone" name="phone" type="tel" placeholder="Enter your mobile number" required autocomplete="tel" /></div>
+              <div class="field"><label for="aDate">Wedding Date</label><input id="aDate" name="date" type="date" placeholder="Select your wedding date" required /></div>
               <div class="field">
                 <label for="aEvent">Ceremony</label>
                 <select id="aEvent" name="event" required>
@@ -493,7 +493,7 @@
                   <option>Haldi</option><option>Mehendi</option><option>Wedding</option><option>Reception</option><option>Engagement</option><option>Multiple events</option>
                 </select>
               </div>
-              <div class="field m-span-2"><label for="aMsg">Anything we should know? <span class="m-optional">(optional)</span></label><textarea id="aMsg" name="message" rows="3"></textarea></div>
+              <div class="field m-span-2"><label for="aMsg">Anything we should know? <span class="m-optional">(optional)</span></label><textarea id="aMsg" name="message" rows="3" placeholder="Ceremonies, venue, timings, inspiration…"></textarea></div>
             </div>
             <p class="form-error" id="appointError" role="alert"></p>
             <button type="submit" class="btn btn-primary btn-book"><svg class="lucide lucide-send" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></svg><span>Request Consultation</span></button>
